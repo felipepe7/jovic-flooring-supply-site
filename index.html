@@ -174,9 +174,9 @@ h3{font-family:var(--f-body);font-weight:700;font-size:1rem;line-height:1.3}
 .hero{position:relative;min-height:clamp(540px,64vh,660px);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff}
 .collage{position:absolute;top:-40%;bottom:-40%;right:-6%;width:52%;z-index:-1;pointer-events:none}
 .collage__grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;transform:rotate(-12deg);transform-origin:center}
-.col{display:flex;flex-direction:column;gap:16px;animation:drift 70s linear infinite}
-.col:nth-child(3){margin-top:-60px;animation-duration:85s}
-.col:nth-child(4){margin-top:-180px;animation-direction:reverse;animation-duration:95s}
+.col{display:flex;flex-direction:column;gap:16px;animation:drift 140s linear infinite}
+.col:nth-child(3){margin-top:-60px;animation-duration:170s}
+.col:nth-child(4){margin-top:-180px;animation-direction:reverse;animation-duration:190s}
 .col--b{animation-direction:reverse;margin-top:-120px}
 .col img,.col video{width:100%;aspect-ratio:4/5;object-fit:cover;flex:none;box-shadow:0 20px 40px -20px rgba(0,0,0,.8)}
 @keyframes drift{from{transform:translateY(0)}to{transform:translateY(-50%)}}
@@ -186,6 +186,9 @@ h3{font-family:var(--f-body);font-weight:700;font-size:1rem;line-height:1.3}
 .hero__label{font:700 .78rem/1 var(--f-head);text-transform:uppercase;letter-spacing:.01em;margin-bottom:16px}
 .hero h1{max-width:12em}
 .hero__sub{margin-top:16px;font-size:1.05rem;color:rgba(255,255,255,.9)}
+/* thin dark outline + soft shadow so white hero text stays legible over the collage */
+.hero h1{text-shadow:-1.5px -1.5px 0 var(--ink),0 -1.5px 0 var(--ink),1.5px -1.5px 0 var(--ink),1.5px 0 0 var(--ink),1.5px 1.5px 0 var(--ink),0 1.5px 0 var(--ink),-1.5px 1.5px 0 var(--ink),-1.5px 0 0 var(--ink),0 4px 18px rgba(10,14,23,.6)}
+.hero__label,.hero__sub{color:#fff;text-shadow:-1px -1px 0 var(--ink),0 -1px 0 var(--ink),1px -1px 0 var(--ink),1px 0 0 var(--ink),1px 1px 0 var(--ink),0 1px 0 var(--ink),-1px 1px 0 var(--ink),-1px 0 0 var(--ink),0 2px 10px rgba(10,14,23,.7)}
 .hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
 .hero__pause{position:absolute;right:var(--gutter);bottom:20px;display:grid;place-items:center;width:38px;height:38px;border-radius:2px;
   background:rgba(10,14,23,.6);border:1px solid rgba(255,255,255,.3);cursor:pointer;color:#fff}
@@ -460,11 +463,14 @@ html.no-scroll{overflow:hidden}
   .bar{display:grid}
   body{padding-bottom:72px}
   .hero{min-height:auto}
-  .collage{width:64%;right:-22%;top:-20%;bottom:-20%;opacity:.8}
-  .collage__grid{grid-template-columns:repeat(2,1fr);gap:12px}
-  .col{gap:12px}
-  .col:nth-child(n+3){display:none}
-  .hero::before{background:linear-gradient(90deg,var(--ink) 0%,rgba(10,14,23,.9) 52%,rgba(10,14,23,.35) 100%)}
+  /* mobile: collage spans the full width behind the text */
+  .collage{left:-16%;right:-16%;width:auto;top:-14%;bottom:-14%;opacity:1}
+  .collage__grid{grid-template-columns:repeat(3,1fr);gap:10px;transform:rotate(-10deg)}
+  .col{gap:10px}
+  .col:nth-child(n+4){display:none}
+  .hero::before{background:linear-gradient(180deg,rgba(10,14,23,.62) 0%,rgba(10,14,23,.46) 34%,rgba(10,14,23,.52) 66%,rgba(10,14,23,.82) 100%)}
+  .hero__sub{font-weight:500}
+  .hero .btn--line-d{background:rgba(10,14,23,.55);border-color:rgba(255,255,255,.8);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
   .hero__body{padding:120px 0 48px}
   .feature{display:block;min-height:0;background:transparent;color:var(--text);overflow:visible}
   .feature::after{display:none}
@@ -480,6 +486,7 @@ html.no-scroll{overflow:hidden}
   .steps,.quotes{grid-template-columns:1fr}
   .about,.area,.faqwrap,.book__grid{grid-template-columns:1fr}
   .about__media{aspect-ratio:16/11}
+  .about__media>img.bg{object-position:50% 18%}
   .ql__box{grid-template-columns:1fr}
   .ql__img{min-height:200px;max-height:260px}
   .draftchip{bottom:calc(80px + env(safe-area-inset-bottom,0px))}
@@ -755,10 +762,10 @@ html.no-scroll{overflow:hidden}
   <section class="hero" aria-labelledby="hero-h">
     <div class="collage" aria-hidden="true">
       <div class="collage__grid">
-        <div class="col"><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-forklift.jpg" tabindex="-1"><source src="assets/video/loop-forklift.mp4" type="video/mp4"></video><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/video/loop-forklift.jpg" alt=""><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""></div>
-        <div class="col col--b"><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-samples.jpg" tabindex="-1"><source src="assets/video/loop-samples.mp4" type="video/mp4"></video><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""><img src="assets/video/loop-samples.jpg" alt=""><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""></div>
-        <div class="col"><img src="assets/img/c-racks.jpg" alt=""><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-planks.jpg" tabindex="-1"><source src="assets/video/loop-planks.mp4" type="video/mp4"></video><img src="assets/img/c-phone.jpg" alt=""><img src="assets/img/c-racks.jpg" alt=""><img src="assets/video/loop-planks.jpg" alt=""><img src="assets/img/c-phone.jpg" alt=""></div>
-        <div class="col"><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""></div>
+        <div class="col"><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-forklift.jpg" tabindex="-1"><source src="assets/video/loop-forklift.mp4" type="video/mp4"></video><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/video/loop-forklift.jpg" alt=""><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/video/loop-forklift.jpg" alt=""><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/video/loop-forklift.jpg" alt=""><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""></div>
+        <div class="col col--b"><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-samples.jpg" tabindex="-1"><source src="assets/video/loop-samples.mp4" type="video/mp4"></video><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""><img src="assets/video/loop-samples.jpg" alt=""><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""><img src="assets/video/loop-samples.jpg" alt=""><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""><img src="assets/video/loop-samples.jpg" alt=""><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""></div>
+        <div class="col"><img src="assets/img/c-racks.jpg" alt=""><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-planks.jpg" tabindex="-1"><source src="assets/video/loop-planks.mp4" type="video/mp4"></video><img src="assets/img/c-phone.jpg" alt=""><img src="assets/img/c-racks.jpg" alt=""><img src="assets/video/loop-planks.jpg" alt=""><img src="assets/img/c-phone.jpg" alt=""><img src="assets/img/c-racks.jpg" alt=""><img src="assets/video/loop-planks.jpg" alt=""><img src="assets/img/c-phone.jpg" alt=""><img src="assets/img/c-racks.jpg" alt=""><img src="assets/video/loop-planks.jpg" alt=""><img src="assets/img/c-phone.jpg" alt=""></div>
+        <div class="col"><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""></div>
       </div>
     </div>
     <div class="wrap hero__body">
@@ -925,7 +932,7 @@ html.no-scroll{overflow:hidden}
   <section class="sec sec--white" id="about">
     <div class="wrap about">
       <div class="about__media rv">
-        <img class="bg" src="assets/img/about-victor.jpg" alt="Victor, owner of Jovic Flooring Supply, on the phone with a customer" data-i18n-attr="alt:about.alt" width="1000" height="1250" loading="lazy" decoding="async">
+        <img class="bg" src="assets/img/about-victor.jpg" alt="Victor, owner of Jovic Flooring Supply, in the showroom" data-i18n-attr="alt:about.alt" width="1200" height="1500" loading="lazy" decoding="async">
         <img class="badge" src="assets/img/badge-320.png" alt="Jovic Flooring Supply" width="320" height="320" loading="lazy" decoding="async">
         <span class="mtag about__mtag" data-i18n="about.tag">Family-owned</span>
         <span class="mtag about__cap" data-i18n="about.cap">Victor, owner</span>
@@ -1465,7 +1472,7 @@ window.JOVIC_I18N={
 "faq.v2a": "Ordering short just to save a few bucks. The next batch can be a different lot that doesn’t match. Order once, order right, and add your 10%.",
 "faq.watch": "Watch Victor answer this",
 "about.cap": "Victor, owner",
-"about.alt": "Victor, owner of Jovic Flooring Supply, on the phone with a customer",
+"about.alt": "Victor, owner of Jovic Flooring Supply, in the showroom",
 "promo.watch": "Watch Victor’s Black Friday video"
 },
 "es": {
@@ -1727,7 +1734,7 @@ window.JOVIC_I18N={
 "faq.v2a": "Ordenar de menos para ahorrar unos dólares. El siguiente pedido puede venir de otro lote que no combina. Ordena una vez, ordena bien y agrega tu 10%.",
 "faq.watch": "Ver la respuesta de Victor (en inglés)",
 "about.cap": "Victor, dueño",
-"about.alt": "Victor, dueño de Jovic Flooring Supply, hablando por teléfono con un cliente",
+"about.alt": "Victor, dueño de Jovic Flooring Supply, en la sala de exhibición",
 "promo.watch": "Ver el video de Black Friday de Victor (en inglés)"
 }
 };
