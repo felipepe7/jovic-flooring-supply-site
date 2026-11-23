@@ -8,6 +8,10 @@
 <meta property="og:title" content="Jovic Flooring Supply | Flooring for San Diego contractors">
 <meta property="og:description" content="In stock, delivered to your job site. Family-owned flooring supply in San Diego.">
 <meta property="og:type" content="website">
+<link rel="canonical" href="https://www.jovicflooring.com/">
+<meta property="og:url" content="https://www.jovicflooring.com/">
+<meta property="og:image" content="https://www.jovicflooring.com/assets/img/feature-victor.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#D7AE4A">
 <link rel="preload" href="assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" type="image/png" href="assets/img/badge-320.png">
@@ -536,7 +540,7 @@ html.no-scroll{overflow:hidden}
   window.JOVIC = {
     // true = shows yellow "draft" notes and placeholder labels, and keeps the page out of search engines.
     // Set to false before launch.
-    draft: true,
+    draft: false,
     // Leads: every "Request a call" form is emailed to Victor through FormSubmit (free, no account).
     // The very first lead sends Victor an "Activate Form" email from FormSubmit. He clicks it once,
     // and every lead after that lands in his inbox.
@@ -659,7 +663,7 @@ html.no-scroll{overflow:hidden}
       <div>
         <h4 data-i18n="mm.quick">Quick links</h4>
         <ul>
-          <li><a href="#picks" data-close data-i18n="mm.picks">This month’s three</a></li>
+          <li class="draft-only"><a href="#picks" data-close data-i18n="mm.picks">This month’s three</a></li>
           <li><a href="#victor" data-close data-i18n="victor.tag">Ask Victor</a></li>
           <li><a href="#book" data-close data-i18n="res.quote">Get a quote</a></li>
         </ul>
@@ -717,7 +721,7 @@ html.no-scroll{overflow:hidden}
           <h4 data-i18n="mm.more">More ways to shop</h4>
           <a href="#shop" data-tab="color" data-drawer-close data-i18n="mm.color">By color</a>
           <a href="#shop" data-tab="project" data-drawer-close data-i18n="mm.project">By project</a>
-          <a href="#picks" data-drawer-close data-i18n="mm.picks">This month’s three</a>
+          <a class="draft-only" href="#picks" data-drawer-close data-i18n="mm.picks">This month’s three</a>
         </div>
       </details>
       <details>
@@ -877,7 +881,7 @@ html.no-scroll{overflow:hidden}
     </div>
   </section>
 
-  <section class="sec sec--white" id="picks">
+  <section class="sec sec--white draft-only" id="picks">
     <div class="wrap">
       <div class="head rv">
         <p class="eyebrow" data-i18n="pick.eyebrow">Three floors, not thirty.</p>
@@ -1022,7 +1026,7 @@ html.no-scroll{overflow:hidden}
         <details><summary data-i18n="faq.2q">Where do you deliver?</summary><p data-i18n="faq.2a">We deliver across San Diego and north to Oceanside. Working farther out, up to Temecula? Ask us for an estimate.</p></details>
         <details><summary data-i18n="faq.3q">What are your hours?</summary><p data-i18n="faq.3a">Monday to Saturday, 7am to 5pm. Deliveries run 8am to 5pm. We’re closed on Sundays.</p></details>
         <details><summary data-i18n="faq.4q">How do I get a price?</summary><p data-i18n="faq.4a">Contractor pricing depends on the job, so we quote directly. Call, text or send the form and we’ll get back to you.</p></details>
-        <details><summary data-i18n="faq.5q">How can I pay?</summary><p data-i18n="faq.5a">We accept Zelle, card and financing. We’ll confirm the options when we quote your job.</p><p class="draft-only" style="padding-bottom:20px"><span class="tag">Confirm card and financing wording with Victor</span></p></details>
+        <details class="draft-only"><summary data-i18n="faq.5q">How can I pay?</summary><p data-i18n="faq.5a">We accept Zelle, card and financing. We’ll confirm the options when we quote your job.</p><p class="draft-only" style="padding-bottom:20px"><span class="tag">Confirm card and financing wording with Victor</span></p></details>
         <details><summary data-i18n="faq.6q">What else do you carry?</summary><p data-i18n="faq.6a">Cabinets, trim and baseboards, shower doors, quartz countertops, vanities and closet built-ins. Ask if you need something not listed.</p></details>
       </div>
     </div>
@@ -1103,7 +1107,7 @@ html.no-scroll{overflow:hidden}
           <li><a href="#shop" data-tab="material" data-i18n="lam.h">Laminate</a></li>
           <li><a href="#shop" data-tab="material" data-i18n="hw.h">Hardwood</a></li>
           <li><a href="#shop" data-tab="material" data-i18n="tile.h">Tile</a></li>
-          <li><a href="#picks" data-i18n="mm.picks">This month’s three</a></li>
+          <li class="draft-only"><a href="#picks" data-i18n="mm.picks">This month’s three</a></li>
         </ul>
       </div>
       <div>
