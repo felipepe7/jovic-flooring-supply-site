@@ -1,0 +1,2212 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jovic Flooring Supply | Flooring for San Diego contractors</title>
+<meta name="description" content="Family-owned flooring supplier in San Diego. LVP, laminate, hardwood and tile for contractors, builders and property managers, delivered to your job site Monday to Saturday.">
+<meta property="og:title" content="Jovic Flooring Supply | Flooring for San Diego contractors">
+<meta property="og:description" content="In stock, delivered to your job site. Family-owned flooring supply in San Diego.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#D7AE4A">
+<link rel="preload" href="assets/fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="icon" type="image/png" href="assets/img/badge-320.png">
+<link rel="apple-touch-icon" href="assets/img/badge-320.png">
+<style>
+/* Jovic Flooring Supply, draft 3
+   Visual language follows the site Victor likes (theflooringfactory.com): warm off-white page, black hero with a
+   tilted photo collage, Outfit headlines, Geist body, Geist Mono labels and tags, flat square buttons, a tinted
+   stats band, a full-width featured video, room-by-room tiles, a tabbed "Shop by" rail, a white trending row and a
+   two-tone "Still not sure? Ask ___." close. Brand: Jovic logo, navy-black, gold, chrome silver. */
+@font-face{font-family:"Outfit";font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/outfit-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Geist";font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/geist-latin-wght-normal.woff2) format("woff2")}
+@font-face{font-family:"Geist Mono";font-style:normal;font-weight:100 900;font-display:swap;src:url(assets/fonts/geist-mono-latin-wght-normal.woff2) format("woff2")}
+:root{
+  --ink:#0A0E17;
+  --navy:#101B33;
+  --navy-2:#16233F;
+  --paper:#F5F3EF;
+  --white:#FFFFFF;
+  --champagne:#F6EBD3;
+  --stone:#ECE9E3;
+  --text:#14161C;
+  --muted:#5A5F6B;
+  --rule:#DEDAD2;
+  --gold:#D7AE4A;
+  --gold-hover:#C79C38;
+  --gold-ink:#1A1305;
+  --gold-text:#8C6414;
+  --gold-big:#A9791F;
+  --gold-hi:#F2D58A;
+  --chrome:#C9CED7;
+  --on-dark:#E9ECF1;
+  --on-dark-muted:#A8B1C0;
+  --line-dark:rgba(233,236,241,.16);
+  --bad:#B42318;
+  --f-head:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-body:"Geist",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --gutter:clamp(16px,3.2vw,40px);
+  --wrap:1280px;
+  --hdr-h:76px;
+  --r:4px;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:calc(var(--hdr-h) + 12px)}
+body{margin:0;background:var(--paper);color:var(--text);font:400 1rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg,video{display:block;max-width:100%}
+a{color:inherit}
+p{margin:0;text-wrap:pretty}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+ul,ol{margin:0;padding:0;list-style:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--gold-text);outline-offset:3px}
+.hdr :focus-visible,.hero :focus-visible,.ftr :focus-visible,.bar :focus-visible,.feature :focus-visible,.drawer :focus-visible,.promo__box :focus-visible{outline-color:var(--gold-hi)}
+.wrap{width:min(100% - 2*var(--gutter),var(--wrap));margin-inline:auto}
+.skip{position:absolute;left:12px;top:-60px;z-index:300;background:var(--gold);color:var(--gold-ink);padding:10px 16px;border-radius:var(--r);font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.ic{display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none;width:18px;height:18px}
+.center{text-align:center;margin-top:26px}
+
+/* ---------- type */
+h1{font-family:var(--f-head);font-weight:700;font-size:clamp(2.5rem,4.6vw,4.1rem);line-height:1.04;letter-spacing:-.015em}
+.h2{font-family:var(--f-head);font-weight:700;font-size:clamp(2rem,3.3vw,2.75rem);line-height:1;letter-spacing:-.01em;text-transform:uppercase}
+.h2--stack{max-width:7.5em}
+h3{font-family:var(--f-body);font-weight:700;font-size:1rem;line-height:1.3}
+.eyebrow{font-family:var(--f-head);font-weight:500;font-size:.78rem;letter-spacing:.02em;text-transform:uppercase;margin-bottom:6px}
+.lede{font-size:clamp(1rem,1.2vw,1.1rem);line-height:1.6;color:var(--muted)}
+.mtag{display:inline-block;font:400 .74rem/1 var(--f-mono);text-transform:uppercase;letter-spacing:.02em;background:var(--ink);color:#fff;padding:6px 8px;border-radius:2px}
+.sec{padding:clamp(56px,7vw,96px) 0}
+.sec--tight-top{padding-top:clamp(8px,2vw,24px)}
+.sec--white{background:var(--white)}
+.head{margin-bottom:clamp(22px,3vw,34px)}
+.head--row{display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+
+/* ---------- buttons and links */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:48px;padding:0 28px;border-radius:2px;
+  font:600 1rem/1 var(--f-body);text-decoration:none;cursor:pointer;border:1.5px solid transparent;white-space:nowrap;
+  transition:background .18s ease,border-color .18s ease,color .18s ease}
+.btn .ic{width:18px;height:18px}
+.btn--gold{background:var(--gold);color:var(--gold-ink)}
+.btn--gold:hover{background:var(--gold-hover)}
+.btn--ink{background:var(--ink);color:#fff}
+.btn--ink:hover{background:var(--navy-2)}
+.btn--line-d{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn--line-d:hover{background:rgba(255,255,255,.1);border-color:#fff}
+.btn--line-l{border-color:var(--text);color:var(--text);background:transparent}
+.btn--line-l:hover{background:var(--text);color:#fff}
+.btn--sm{min-height:42px;padding:0 20px;font-size:.92rem}
+.btn--block{width:100%}
+.tlink{display:inline-flex;align-items:center;gap:4px;color:var(--gold-text);font-weight:500;font-size:.92rem;text-decoration:none}
+.tlink .ic{width:14px;height:14px}
+.tlink:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- announcement bar */
+.ann{background:var(--gold);color:var(--gold-ink)}
+.ann__in{margin:0;min-height:34px;display:flex;align-items:center;justify-content:center;text-align:center;padding:7px 14px;font:500 .74rem/1.5 var(--f-mono)}
+.ann__short{display:none}
+
+/* ---------- header */
+.hdr{position:sticky;top:0;z-index:80;background:var(--navy);color:var(--on-dark);border-bottom:1px solid var(--line-dark)}
+.hdr.is-solid{box-shadow:0 10px 30px -18px rgba(0,0,0,.8)}
+.hdr__in{height:var(--hdr-h);display:flex;align-items:center;gap:clamp(16px,2.4vw,40px)}
+.logo{display:block;flex:none;line-height:0}
+.logo img{height:44px;width:auto}
+.nav{display:flex;align-items:stretch;height:100%;gap:clamp(6px,1.4vw,22px)}
+.nav > li{display:flex;align-items:center}
+.nav__a,.nav__btn{display:inline-flex;align-items:center;height:100%;padding:0 4px;background:none;border:0;cursor:pointer;
+  font:400 .95rem/1 var(--f-body);text-decoration:none;color:var(--on-dark);position:relative;white-space:nowrap}
+.nav__a::after,.nav__btn::after{content:"";position:absolute;left:4px;right:4px;bottom:-1px;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform .2s var(--ease)}
+.nav__a:hover::after,.nav__btn:hover::after,.nav__btn[aria-expanded="true"]::after{transform:scaleX(1)}
+.hdr__actions{display:flex;align-items:center;gap:14px;margin-left:auto}
+.hdr__phone{display:inline-flex;align-items:center;gap:8px;font:500 .92rem/1 var(--f-mono);text-decoration:none;white-space:nowrap}
+.hdr__phone .ic{color:var(--gold)}
+.lang{display:inline-flex;border:1px solid var(--line-dark);border-radius:2px;overflow:hidden}
+.lang button{appearance:none;border:0;background:transparent;cursor:pointer;padding:9px 9px;min-width:38px;text-align:center;font:500 .76rem/1 var(--f-mono);color:var(--on-dark-muted)}
+.lang button[aria-pressed="true"]{background:var(--gold);color:var(--gold-ink)}
+.lang button:focus-visible{outline-offset:-3px}
+.burger{display:none;width:44px;height:44px;place-items:center;border:0;background:none;cursor:pointer;color:var(--on-dark);margin-left:-8px}
+.burger .ic{width:24px;height:24px;stroke-width:1.6}
+
+/* mega menu: plain text columns on the page color, like the reference */
+.mm{position:absolute;left:0;right:0;top:100%;background:var(--paper);color:var(--text);border-bottom:1px solid var(--rule);
+  box-shadow:0 30px 50px -30px rgba(10,14,23,.35);opacity:0;visibility:hidden;transform:translateY(-4px);transition:opacity .16s ease,transform .16s ease,visibility 0s linear .16s}
+.mm.is-open{opacity:1;visibility:visible;transform:none;transition:opacity .16s ease,transform .16s ease}
+.mm__in{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;padding:32px 0 40px}
+.mm__in--sm{grid-template-columns:repeat(3,minmax(0,220px))}
+.mm h4{font:700 .82rem/1.2 var(--f-body);margin-bottom:14px}
+.mm ul{display:grid;gap:10px;font-size:.95rem;color:var(--muted)}
+.mm a{text-decoration:none;color:var(--text)}
+.mm a:hover{color:var(--gold-text);text-decoration:underline;text-underline-offset:3px}
+
+/* drawer (phones) */
+.drawer{position:fixed;inset:0;z-index:150;display:none}
+.drawer.is-open{display:block}
+.drawer__scrim{position:absolute;inset:0;background:rgba(3,6,12,.55)}
+.drawer__panel{position:absolute;inset:0 auto 0 0;width:min(420px,92vw);background:var(--paper);color:var(--text);display:flex;flex-direction:column;overflow-y:auto;
+  padding:0 20px calc(24px + env(safe-area-inset-bottom));box-shadow:30px 0 60px rgba(0,0,0,.35);animation:slidein .22s var(--ease)}
+@keyframes slidein{from{transform:translateX(-24px);opacity:.5}to{transform:none;opacity:1}}
+.drawer__top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 -20px;padding:12px 20px;background:var(--navy)}
+.drawer__top img{height:36px;width:auto}
+.drawer__x{width:44px;height:44px;display:grid;place-items:center;background:none;border:0;cursor:pointer;color:var(--on-dark)}
+.drawer nav{display:grid;margin-top:6px}
+.drawer details{border-bottom:1px solid var(--rule)}
+.drawer summary,.drawer .d__a{display:flex;align-items:center;justify-content:space-between;min-height:56px;font:600 1.05rem/1 var(--f-head);cursor:pointer;list-style:none;text-decoration:none;color:var(--text)}
+.drawer summary::-webkit-details-marker{display:none}
+.drawer summary::after{content:"+";font-size:1.4rem;font-weight:400;color:var(--gold-text)}
+.drawer details[open] summary::after{content:"\2212"}
+.drawer .d__a{border-bottom:1px solid var(--rule)}
+.drawer__sub{padding:0 0 16px;display:grid;gap:2px}
+.drawer__sub h4{font:500 .72rem/1 var(--f-mono);text-transform:uppercase;color:var(--muted);margin:12px 0 6px}
+.drawer__sub a{display:flex;align-items:center;min-height:40px;text-decoration:none;color:var(--text)}
+.drawer__cta{display:grid;gap:10px;margin-top:22px}
+.drawer__cta .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.drawer .lang{align-self:flex-start;margin-top:20px;border-color:var(--rule)}
+.drawer .lang button{color:var(--muted)}
+
+/* ---------- hero: black field, tilted collage on the right */
+.hero{position:relative;min-height:clamp(540px,64vh,660px);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate;background:var(--ink);color:#fff}
+.collage{position:absolute;top:-40%;bottom:-40%;right:-6%;width:52%;z-index:-1;pointer-events:none}
+.collage__grid{position:absolute;inset:0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;transform:rotate(-12deg);transform-origin:center}
+.col{display:flex;flex-direction:column;gap:16px;animation:drift 70s linear infinite}
+.col:nth-child(3){margin-top:-60px;animation-duration:85s}
+.col:nth-child(4){margin-top:-180px;animation-direction:reverse;animation-duration:95s}
+.col--b{animation-direction:reverse;margin-top:-120px}
+.col img,.col video{width:100%;aspect-ratio:4/5;object-fit:cover;flex:none;box-shadow:0 20px 40px -20px rgba(0,0,0,.8)}
+@keyframes drift{from{transform:translateY(0)}to{transform:translateY(-50%)}}
+.hero.is-paused .col{animation-play-state:paused}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,var(--ink) 0%,rgba(10,14,23,.94) 34%,rgba(10,14,23,.25) 58%,rgba(10,14,23,0) 75%)}
+.hero__body{padding:96px 0 clamp(56px,8vh,84px)}
+.hero__label{font:700 .78rem/1 var(--f-head);text-transform:uppercase;letter-spacing:.01em;margin-bottom:16px}
+.hero h1{max-width:12em}
+.hero__sub{margin-top:16px;font-size:1.05rem;color:rgba(255,255,255,.9)}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero__pause{position:absolute;right:var(--gutter);bottom:20px;display:grid;place-items:center;width:38px;height:38px;border-radius:2px;
+  background:rgba(10,14,23,.6);border:1px solid rgba(255,255,255,.3);cursor:pointer;color:#fff}
+.hero__pause .ic{width:14px;height:14px}
+.hero__pause .i-play{display:none}
+.hero__pause[aria-pressed="true"] .i-play{display:block}
+.hero__pause[aria-pressed="true"] .i-pause{display:none}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.hero__label,.hero h1,.hero__sub,.hero__cta{animation:rise .8s var(--ease) both}
+.hero h1{animation-delay:.06s}.hero__sub{animation-delay:.14s}.hero__cta{animation-delay:.22s}
+
+/* ---------- tinted stats band with a moving line */
+.band{background:var(--champagne);border-bottom:1px solid #EADDBD}
+.band__in{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:32px;min-height:94px}
+.band__stat{display:flex;flex-direction:column;gap:2px;font:400 .86rem/1.35 var(--f-mono)}
+.band__stat span:first-child{font-weight:600;font-size:.95rem}
+.band__stat span:last-child{color:#6B5A36}
+.band__stat--r{text-align:right}
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.marquee__track{display:flex;width:max-content;gap:56px;animation:marq 48s linear infinite;font:400 .84rem/1 var(--f-mono)}
+.marquee__track span{white-space:nowrap}
+.marquee__track span::after{content:"\2014";margin-left:56px;color:var(--gold-big)}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.band:hover .marquee__track{animation-play-state:paused}
+
+/* ---------- featured video (Ask Victor) */
+.feature{position:relative;min-height:clamp(440px,42vw,560px);border-radius:var(--r);overflow:hidden;isolation:isolate;display:flex;align-items:flex-end;color:#fff;background:var(--ink)}
+.feature__bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 50%;z-index:-2}
+.feature::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(10,14,23,.82) 0%,rgba(10,14,23,.45) 45%,rgba(10,14,23,0) 75%),linear-gradient(0deg,rgba(10,14,23,.6),rgba(10,14,23,0) 50%)}
+.feature__tag{position:absolute;left:24px;top:22px;background:var(--gold);color:var(--gold-ink)}
+.feature__draft{position:absolute;left:24px;top:56px}
+.feature__body{padding:clamp(24px,3vw,40px);max-width:600px}
+.feature__h{font-family:var(--f-head);font-weight:700;font-size:clamp(1.9rem,3.2vw,2.6rem);line-height:1.05;letter-spacing:-.01em}
+.feature__p{margin-top:14px;color:rgba(255,255,255,.88);max-width:34em;font-size:.98rem}
+.feature__cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.play{display:grid;place-items:center;width:58px;height:44px;border-radius:2px;border:0;background:var(--champagne);color:var(--gold-big);cursor:pointer;transition:transform .2s var(--ease)}
+.play .ic{width:22px;height:22px}
+.feature__play{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%)}
+.feature__play:hover{transform:translate(-50%,-50%) scale(1.06)}
+.feature.is-playing .feature__play,.feature.is-playing .feature__tag{display:none}
+
+/* ---------- see it on site */
+.reels{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.reel{display:block;width:100%;padding:0;border:0;background:none;font:inherit;text-align:left;cursor:pointer;text-decoration:none;color:var(--text)}
+.reel__media{position:relative;display:block;aspect-ratio:4/5;overflow:hidden;background:var(--stone)}
+.reel__media img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.reel:hover .reel__media img{transform:scale(1.04)}
+.reel .mtag{position:absolute;left:12px;bottom:12px}
+.reel .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none}
+.reel__t{display:block;margin-top:10px;font-weight:600;font-size:.95rem}
+
+/* ---------- shop by: mono tabs + horizontal rail */
+.tabs{display:flex;gap:28px;margin-top:16px}
+.tabs button,.tabs span{appearance:none;background:none;border:0;cursor:pointer;padding:0 0 7px;font:400 .95rem/1 var(--f-mono);text-transform:uppercase;color:var(--muted);border-bottom:2px solid transparent}
+.tabs button[aria-selected="true"],.tabs span[aria-current]{color:var(--text);border-bottom-color:var(--gold)}
+.tabs--static span{cursor:default}
+.arrows{display:flex;gap:6px}
+.arrow{width:44px;height:44px;display:grid;place-items:center;background:none;border:0;cursor:pointer;color:var(--text)}
+.arrow .ic{width:24px;height:24px;stroke-width:1.5}
+.arrow[disabled]{color:#B9B5AC;cursor:default}
+.panel[hidden]{display:none}
+.panel{animation:fade .3s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2*14px)/3.2);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:4px}
+.rail::-webkit-scrollbar{display:none}
+.tile{scroll-snap-align:start;display:flex;flex-direction:column;align-items:flex-start}
+.tile p{flex:1}
+.tile__img{width:100%;aspect-ratio:6/5;background:var(--stone);overflow:hidden}
+.tile__img img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.tile:hover .tile__img img{transform:scale(1.04)}
+.tile h3{margin-top:14px}
+.tile p{margin-top:4px;color:var(--muted);font-size:.92rem;line-height:1.5}
+.tile .btn{margin-top:16px}
+.also{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 0;margin-top:30px;font-size:.9rem;color:var(--muted)}
+.also strong{font:500 .78rem/1 var(--f-mono);text-transform:uppercase;color:var(--text);margin-right:16px}
+.also span{padding:0 12px;border-left:1px solid var(--rule)}
+.also strong + span{padding-left:0;border-left:0}
+/* wood-tone fills for the color tiles (stand-ins until real product photos) */
+.t-light{background:repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 2px,transparent 2px 22px),repeating-linear-gradient(0deg,transparent 0 118px,rgba(0,0,0,.18) 118px 120px),linear-gradient(135deg,#F1E2C3,#D9BE8C 55%,#E8D3A8)}
+.t-natural{background:repeating-linear-gradient(90deg,rgba(255,255,255,.14) 0 2px,transparent 2px 22px),repeating-linear-gradient(0deg,transparent 0 118px,rgba(0,0,0,.2) 118px 120px),linear-gradient(135deg,#D8B07A,#B98A55 55%,#CFA26B)}
+.t-brown{background:repeating-linear-gradient(90deg,rgba(255,255,255,.1) 0 2px,transparent 2px 22px),repeating-linear-gradient(0deg,transparent 0 118px,rgba(0,0,0,.25) 118px 120px),linear-gradient(135deg,#9A6A3F,#7A4E2A 55%,#8F6038)}
+.t-dark{background:repeating-linear-gradient(90deg,rgba(255,255,255,.08) 0 2px,transparent 2px 22px),repeating-linear-gradient(0deg,transparent 0 118px,rgba(0,0,0,.3) 118px 120px),linear-gradient(135deg,#5A3B24,#3B2617 55%,#4C3220)}
+.t-gray{background:repeating-linear-gradient(90deg,rgba(255,255,255,.16) 0 2px,transparent 2px 22px),repeating-linear-gradient(0deg,transparent 0 118px,rgba(0,0,0,.16) 118px 120px),linear-gradient(135deg,#C9C6C0,#9C9891 55%,#B5B1AA)}
+.t-white{background:repeating-linear-gradient(90deg,transparent 0 118px,rgba(0,0,0,.08) 118px 120px),repeating-linear-gradient(0deg,transparent 0 118px,rgba(0,0,0,.08) 118px 120px),linear-gradient(135deg,#FBFAF7,#ECE7DC 60%,#F5F1EA)}
+
+/* ---------- this month's three */
+.picks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pick{text-align:center}
+.pick__img{position:relative;display:block;width:100%;aspect-ratio:1/1;padding:0;border:0;cursor:pointer;overflow:hidden;background:var(--stone)}
+.pick__img img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.pick:hover .pick__img img{transform:scale(1.04)}
+.pick__quick{position:absolute;left:50%;bottom:16px;transform:translate(-50%,8px);display:inline-flex;white-space:nowrap;align-items:center;gap:8px;padding:10px 16px;border-radius:2px;background:#fff;color:var(--text);font:600 .9rem/1 var(--f-body);opacity:0;transition:opacity .2s,transform .2s var(--ease);box-shadow:0 10px 24px -12px rgba(0,0,0,.5)}
+.pick:hover .pick__quick,.pick__img:focus-visible .pick__quick{opacity:1;transform:translate(-50%,0)}
+@media (hover:none){.pick__quick{opacity:1;transform:translate(-50%,0)}}
+.pick__cat{margin-top:14px;font:400 .74rem/1 var(--f-mono);text-transform:uppercase;color:var(--muted)}
+.pick h3{margin-top:6px;font-size:1rem}
+
+/* ---------- how it works */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px)}
+.step{border-top:1px solid var(--text);padding-top:20px}
+.step h3{margin-top:16px;font:700 clamp(1.3rem,2vw,1.6rem)/1.15 var(--f-head)}
+.step p{margin-top:8px;color:var(--muted)}
+.step__note{font:400 .84rem/1.5 var(--f-mono);color:var(--text) !important;margin-top:14px !important}
+
+/* ---------- reviews (draft placeholders) */
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.quote{border:1.5px dashed var(--rule);padding:22px;color:var(--muted)}
+.quote p{margin-top:10px}
+
+/* ---------- about */
+.about{display:grid;grid-template-columns:5fr 6fr;gap:clamp(32px,6vw,96px);align-items:center}
+.about__media{position:relative;aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;background:var(--ink);isolation:isolate}
+.about__media>img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;z-index:-2}
+.about__media::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,14,23,0) 55%,rgba(10,14,23,.62))}
+.about__media .badge{position:absolute;right:16px;bottom:16px;width:clamp(72px,18%,104px);height:auto;aspect-ratio:1/1;filter:drop-shadow(0 10px 24px rgba(0,0,0,.5))}
+.about__mtag{position:absolute;left:16px;top:16px}
+.about__tag{position:absolute;left:14px;bottom:14px}
+.about__copy .h2{margin-bottom:18px}
+.about__copy .lede{color:var(--text)}
+.about__copy p + p{margin-top:14px;color:var(--muted)}
+.save{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;margin-top:30px;padding:20px 22px;background:var(--champagne)}
+.save h3{font-size:1.05rem}
+.save p{margin-top:4px !important;font-size:.92rem;color:#5E5236 !important;max-width:26em}
+
+/* ---------- delivery */
+.area{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.area .h2{margin-bottom:16px}
+.area .lede{max-width:30em}
+.hours{margin:28px 0 0;border-top:1px solid var(--rule)}
+.hours div{display:flex;justify-content:space-between;gap:20px;padding:13px 0;border-bottom:1px solid var(--rule)}
+.hours dt{color:var(--muted)}
+.hours dd{margin:0;font:500 .92rem/1.6 var(--f-mono);text-align:right}
+.hours__note{margin-top:14px;color:var(--muted);font-size:.92rem;max-width:32em}
+.map{border-radius:var(--r);background:#0A1326;overflow:hidden}
+.map svg{width:100%;height:auto}
+.map text{font-family:var(--f-body);paint-order:stroke}
+
+/* ---------- faq */
+.faqwrap{display:grid;grid-template-columns:4fr 7fr;gap:clamp(32px,6vw,96px);align-items:start}
+.faqwrap .h2{margin-bottom:14px}
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-child{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:20px 0;font:600 1.08rem/1.3 var(--f-head)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";flex:none;font:300 1.6rem/1 var(--f-body);color:var(--gold-text)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{padding:0 48px 22px 0;color:var(--muted);max-width:44em}
+
+/* ---------- still not sure? ask victor (+ chat-style form) */
+.book__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.book__h{font-family:var(--f-head);font-weight:700;font-size:clamp(2.2rem,3.6vw,3rem);line-height:1.02;text-transform:uppercase;letter-spacing:-.015em}
+.book__h span{display:block}
+.book__h .hl{color:var(--gold-big)}
+.book .lede{margin-top:16px;max-width:30em;color:var(--text)}
+.tlinks{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px}
+.form{background:var(--white);color:var(--text);border-radius:6px;overflow:hidden;position:relative;box-shadow:0 1px 2px rgba(10,14,23,.06),0 24px 50px -28px rgba(10,14,23,.4)}
+.chat__top{display:flex;align-items:center;gap:12px;padding:14px 18px;border-bottom:1px solid #EEECE7}
+.chat__top img{width:40px;height:40px;border-radius:50%}
+.chat__top div{display:flex;flex-direction:column;line-height:1.25}
+.chat__top strong{font-size:.98rem}
+.chat__top span{font-size:.82rem;color:var(--muted)}
+.chat__call{margin-left:auto;width:40px;height:40px;display:grid;place-items:center;color:var(--text)}
+.fields,.done{padding:18px 20px 22px}
+.bubble{display:inline-block;max-width:86%;background:#F0EEEA;border-radius:16px 16px 16px 4px;padding:11px 14px;font-size:.95rem;line-height:1.45;margin-bottom:18px}
+.bubble--me{display:block;width:max-content;max-width:86%;margin-left:auto;background:var(--gold);color:var(--gold-ink);border-radius:16px 16px 4px 16px;margin-bottom:10px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.field label{font-weight:600;font-size:.86rem}
+.field input,.field select{width:100%;height:48px;padding:0 13px;background:#FAF9F7;border:1px solid #D3CFC6;border-radius:2px;color:var(--text);font:inherit;appearance:none;-webkit-appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%238C6414' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;padding-right:38px}
+.field input::placeholder{color:#8A8F99}
+.field input:focus,.field select:focus{outline:none;border-color:var(--gold-text);box-shadow:0 0 0 3px rgba(215,174,74,.3);background:#fff}
+.field .err{display:none;color:var(--bad);font-size:.85rem;font-weight:600}
+.field.is-bad .err{display:block}
+.field.is-bad input,.field.is-bad select{border-color:var(--bad)}
+.ctx{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:-6px 0 16px;padding:9px 12px;background:var(--champagne);font-size:.9rem}
+.ctx[hidden]{display:none}
+.ctx button{margin-left:auto;background:none;border:0;cursor:pointer;color:var(--muted);text-decoration:underline;font-size:.86rem;padding:4px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form__fine{margin-top:12px;color:var(--muted);font-size:.84rem}
+.form__status{margin-top:12px;font-size:.92rem}
+.form__status.is-bad{color:var(--bad)}
+.form__draft{margin-top:10px}
+.done{display:none}
+.form.is-sent .fields{display:none}
+.form.is-sent .done{display:block}
+
+/* ---------- footer */
+.ftr{background:var(--ink);color:var(--on-dark);padding:clamp(48px,6vw,72px) 0 34px;font-size:.92rem}
+.ftr img.wm{height:46px;width:auto;margin-bottom:34px}
+.ftr__grid{display:grid;grid-template-columns:1fr 1fr 1.2fr 1.4fr;gap:clamp(24px,4vw,56px)}
+.ftr h3{font:700 .82rem/1.2 var(--f-body);margin-bottom:16px;color:#fff}
+.ftr ul{display:grid;gap:10px;color:var(--on-dark-muted)}
+.ftr a{text-decoration:none}
+.ftr a:hover{color:var(--gold-hi)}
+.ftr__save p{margin:-6px 0 16px;color:var(--on-dark-muted)}
+.social{display:flex;align-items:center;gap:16px;margin-top:40px}
+.social a{color:var(--on-dark-muted)}
+.social a:hover{color:var(--gold-hi)}
+.ftr__base{margin-top:22px;padding-top:20px;border-top:1px solid var(--line-dark);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;color:var(--on-dark-muted);font:400 .78rem/1.5 var(--f-mono)}
+
+/* ---------- floating help pill (desktop) + mobile action bar */
+.help{position:fixed;right:22px;bottom:22px;z-index:90;display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;background:var(--gold);color:var(--gold-ink);font:600 .98rem/1 var(--f-body);text-decoration:none;box-shadow:0 14px 30px -12px rgba(10,14,23,.55)}
+.help:hover{background:var(--gold-hover)}
+.help .ic{width:22px;height:22px}
+.bar{position:fixed;inset:auto 0 0 0;z-index:90;display:none;grid-template-columns:1fr 1fr 1.4fr;gap:8px;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:var(--ink);border-top:1px solid var(--line-dark)}
+.bar .btn{min-height:46px;padding:0 10px;font-size:.92rem}
+
+/* ---------- modals */
+.modal{position:fixed;inset:0;z-index:200;display:none;place-items:center;padding:20px;background:rgba(3,6,12,.7)}
+.modal.is-open{display:grid}
+.modal__x{position:absolute;right:10px;top:10px;width:40px;height:40px;display:grid;place-items:center;background:#fff;border:0;border-radius:2px;cursor:pointer;color:var(--text);z-index:2}
+.modal__x .ic{width:18px;height:18px}
+.promo__box{position:relative;width:min(100%,500px);background:var(--paper);color:var(--text);border-top:6px solid var(--gold);padding:40px clamp(22px,4vw,36px) 28px;box-shadow:0 40px 90px -20px rgba(0,0,0,.6)}
+.promo__box .modal__x{background:transparent}
+.promo__box h2{font:700 clamp(1.7rem,4vw,2.2rem)/1.05 var(--f-head);margin:16px 0 10px;text-transform:uppercase}
+.promo__box p{color:var(--muted)}
+.promo__box .promo__fine{margin-top:12px;font:400 .78rem/1.5 var(--f-mono)}
+.promo__cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;align-items:center}
+.promo__no{background:none;border:0;cursor:pointer;color:var(--muted);text-decoration:underline;padding:10px 6px}
+.promo__tag{margin:10px 0 0;display:block;width:max-content}
+.ql__box{position:relative;width:min(100%,860px);max-height:calc(100vh - 40px);overflow:auto;background:var(--white);display:grid;grid-template-columns:1fr 1fr;box-shadow:0 40px 90px -20px rgba(0,0,0,.6)}
+.ql__img{min-height:320px;background:var(--stone)}
+.ql__img img{width:100%;height:100%;object-fit:cover}
+.ql__body{padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:8px;text-align:left}
+.ql__body .pick__cat{margin-top:0}
+.ql__body h2{font:700 clamp(1.6rem,3vw,2.1rem)/1.05 var(--f-head)}
+.ql__body p{color:var(--muted)}
+.ql__dl{margin:10px 0 4px;border-top:1px solid var(--rule)}
+.ql__dl div{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid var(--rule);font-size:.92rem}
+.ql__dl dt{color:var(--muted)}
+.ql__dl dd{margin:0;font-weight:600;text-align:right}
+.ql__cta{display:grid;gap:10px;margin-top:auto;padding-top:14px}
+html.no-scroll{overflow:hidden}
+
+/* ---------- scroll reveal */
+.js .rv{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+
+/* ---------- draft helpers */
+.draft-only{display:none !important}
+.is-draft .draft-only{display:revert !important}
+.is-draft .about__tag.draft-only,.is-draft .promo__tag.draft-only,.is-draft .feature__draft.draft-only{display:inline-block !important}
+.is-draft .draft-only[hidden]{display:none !important}
+.tag{display:inline-block;font:600 .74rem/1.25 var(--f-body);padding:6px 9px;background:#FFE08A;color:#2A1D00;border-radius:2px}
+.draftchip{position:fixed;left:12px;bottom:12px;z-index:95;cursor:pointer;max-width:calc(100vw - 24px);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.draftchip::after{content:"\00D7";margin-left:8px;font-size:1rem;line-height:0;vertical-align:-1px}
+
+/* ---------- responsive */
+@media (max-width:1180px){
+  .hdr__phone span{display:none}
+  .mm__in{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1000px){
+  .nav,.hdr .lang,.hdr__phone{display:none}
+  .burger{display:grid}
+  .hdr__in{justify-content:space-between}
+  .logo{position:absolute;left:50%;transform:translateX(-50%)}
+  .band__in{grid-template-columns:minmax(0,1fr);min-height:56px}
+  .band__stat{display:none}
+  .reels{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .reels::-webkit-scrollbar{display:none}
+  .reel{scroll-snap-align:start}
+  .rail{grid-auto-columns:calc((100% - 14px)/2.2)}
+  .ftr__grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  :root{--hdr-h:64px}
+  .logo img{height:36px}
+  .help{display:none}
+  .bar{display:grid}
+  body{padding-bottom:72px}
+  .hero{min-height:auto}
+  .collage{width:64%;right:-22%;top:-20%;bottom:-20%;opacity:.8}
+  .collage__grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .col{gap:12px}
+  .col:nth-child(n+3){display:none}
+  .hero::before{background:linear-gradient(90deg,var(--ink) 0%,rgba(10,14,23,.9) 52%,rgba(10,14,23,.35) 100%)}
+  .hero__body{padding:120px 0 48px}
+  .feature{display:block;min-height:0;background:transparent;color:var(--text);overflow:visible}
+  .feature::after{display:none}
+  .feature__media{position:relative}
+  .feature__bg{position:relative;inset:auto;height:auto;aspect-ratio:4/3;border-radius:var(--r);z-index:0;object-position:78% 50%}
+  .feature__play{top:calc((100vw - 2*var(--gutter))*.375)}
+  .feature__body{padding:22px 0 0;max-width:none}
+  .feature__p{color:var(--text)}
+  .feature .btn--line-d{border-color:var(--text);color:var(--text)}
+  .feature .eyebrow{color:var(--text)}
+  .picks{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .pick{scroll-snap-align:start}
+  .steps,.quotes{grid-template-columns:1fr}
+  .about,.area,.faqwrap,.book__grid{grid-template-columns:1fr}
+  .about__media{aspect-ratio:16/11}
+  .ql__box{grid-template-columns:1fr}
+  .ql__img{min-height:200px;max-height:260px}
+  .draftchip{bottom:calc(80px + env(safe-area-inset-bottom,0px))}
+}
+@media (max-width:640px){
+  .ann__full{display:none}
+  .ann__short{display:inline}
+  .hdr .btn--gold{display:none}
+  .hero__cta .btn{flex:1 1 100%}
+  .hero__pause{bottom:auto;top:16px}
+  .head--row{align-items:flex-start}
+  .arrows{display:none}
+  .rail{grid-auto-columns:78%}
+  .form .row{grid-template-columns:1fr}
+  .ftr__grid{grid-template-columns:1fr 1fr}
+  .ftr__save{grid-column:1/-1}
+  .map .cl{font-size:19px !important}
+  .map .cl.hub{font-size:23px !important}
+  .map .lg{font-size:19px !important}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .col,.marquee__track,.hero__label,.hero h1,.hero__sub,.hero__cta,.panel,.drawer__panel{animation:none}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .reel:hover .reel__media img,.tile:hover .tile__img img,.pick:hover .pick__img img{transform:none}
+}
+
+/* ---------- draft 4: Victor's videos, lightbox, real footage */
+.reels--3{grid-template-columns:repeat(3,1fr);gap:16px}
+.reel__media::after{content:"";position:absolute;inset:auto 0 0;height:38%;background:linear-gradient(0deg,rgba(10,14,23,.55),rgba(10,14,23,0));pointer-events:none}
+.reel .mtag,.reel__dur{z-index:1}
+.reel__dur{position:absolute;right:12px;bottom:12px;display:inline-flex;align-items:center;gap:6px;font:500 .78rem/1 var(--f-mono);color:var(--gold-ink);background:var(--champagne);padding:7px 10px 7px 8px;border-radius:2px;transition:transform .2s var(--ease)}
+.reel__dur .ic{width:13px;height:13px;color:var(--gold-big)}
+.reel:hover .reel__dur{transform:scale(1.06)}
+.reel__t{font:600 1.05rem/1.3 var(--f-head);margin-top:12px}
+.reel:hover .reel__t{color:var(--gold-text)}
+.reel:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+.follow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 20px;color:var(--muted);font-size:.92rem}
+.follow .ic{width:16px;height:16px}
+.btn .dur{font:400 .74rem/1 var(--f-mono);opacity:.75;margin-left:2px}
+.faq__watch{background:none;border:0;padding:0 0 22px;cursor:pointer;font:inherit;font-weight:500;font-size:.92rem;color:var(--gold-text)}
+.faq__watch .ic,.promo__watch .ic{width:14px;height:14px}
+.promo__watch{background:none;border:0;padding:0;margin-top:12px;cursor:pointer;font:inherit;font-weight:500;font-size:.92rem;color:var(--gold-text)}
+.about__cap{position:absolute;left:16px;bottom:16px;background:rgba(10,14,23,.78)}
+.vid__box{position:relative;width:min(100%,420px,calc((100vh - 150px) * .5625));width:min(100%,420px,calc((100dvh - 150px) * .5625));background:#000;box-shadow:0 40px 90px -20px rgba(0,0,0,.7);border-top:4px solid var(--gold)}
+.vid__box video{display:block;width:100%;aspect-ratio:9/16;background:#000}
+.vid__bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;background:var(--ink);color:#fff}
+.vid__bar h2{font:600 .95rem/1.3 var(--f-head);margin:0}
+.vid__box .modal__x{right:8px;top:8px}
+@media (max-width:900px){
+  .reels--3{grid-template-columns:none;grid-auto-columns:64%}
+}
+</style>
+<script>
+/* Jovic Flooring Supply: site settings.
+   Everything the team may want to change without touching the page itself lives here. */
+(function () {
+  window.JOVIC = {
+    // true = shows yellow "draft" notes and placeholder labels, and keeps the page out of search engines.
+    // Set to false before launch.
+    draft: true,
+    // Leads: every "Request a call" form is emailed to Victor through FormSubmit (free, no account).
+    // The very first lead sends Victor an "Activate Form" email from FormSubmit. He clicks it once,
+    // and every lead after that lands in his inbox.
+    leadEmail: "emdsd1312@gmail.com",
+    // Text alert: a second address that turns each lead email into a text to Victor's phone, (619) 678-6938.
+    // Empty = email only.
+    leadTextEmail: "jovicleads.rcdbrp@zapiermail.com",
+    // Optional: your own endpoint that accepts a JSON POST. When set, it is used instead of FormSubmit.
+    leadEndpoint: "",
+    // Black Friday pop-up. variant "A" = 30¢ off every sq ft + free delivery over 1,500 sq ft (the offer in Victor's reel),
+    // "B" = free delivery on the first two orders.
+    // The pop-up stops appearing after endsOn (Pacific time). Add ?promo to the address to force it, ?nopromo to hide it.
+    promo: { variant: "A", endsOn: "2026-11-27", delaySeconds: 9 },
+    // How a lead that claimed the pop-up offer is labeled in Victor's email.
+    promoLabel: "Black Friday: 30¢ off every sq ft + free delivery over 1,500 sq ft"
+    // Victor's videos (intro, contractor FAQ, running short) live in assets/video. To add or swap one,
+    // set videos: { key: { src, poster, title } } here and point a button at it with data-video="key".
+  };
+  var root = document.documentElement;
+  root.classList.remove("no-js");
+  root.classList.add("js");
+  if (window.JOVIC.draft) {
+    root.classList.add("is-draft");
+    var m = document.createElement("meta");
+    m.name = "robots";
+    m.content = "noindex, nofollow";
+    document.head.appendChild(m);
+  }
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4" width="4" height="16" fill="currentColor" stroke="none"/><rect x="14" y="4" width="4" height="16" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 3.5v17l14-8.5z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M20 12H4M10 6l-6 6 6 6"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-tt" viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c.6 2.7 2.4 4.3 5 4.6"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+</svg>
+
+<div class="ann" role="note">
+  <p class="ann__in"><span class="ann__full" data-i18n="ann.full">In stock, delivered to your job site. San Diego to Oceanside, Monday to Saturday.</span><span class="ann__short" data-i18n="ann.short">In stock, delivered to your job site.</span></p>
+</div>
+
+<header class="hdr" id="top">
+  <div class="wrap hdr__in">
+    <button class="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu" data-i18n-attr="aria-label:menu.open"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    <a class="logo" href="#top"><img src="assets/img/logo-wordmark.svg" alt="Jovic Flooring Supply" width="161" height="44"></a>
+    <ul class="nav" aria-label="Main" data-i18n-attr="aria-label:nav.aria">
+      <li><button class="nav__btn" type="button" aria-expanded="false" aria-controls="mm-floors"><span data-i18n="nav.floors">Shop floors</span></button></li>
+      <li><button class="nav__btn" type="button" aria-expanded="false" aria-controls="mm-res"><span data-i18n="nav.resources">Resources</span></button></li>
+      <li><a class="nav__a" href="#delivery" data-i18n="nav.delivery">Delivery area</a></li>
+      <li><a class="nav__a" href="#about" data-i18n="nav.about">About us</a></li>
+    </ul>
+    <div class="hdr__actions">
+      <a class="hdr__phone" href="tel:+16196786938" aria-label="Call (619) 678-6938" data-i18n-attr="aria-label:hdr.callaria"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span>(619) 678-6938</span></a>
+      <a class="btn btn--gold btn--sm" href="#book"><span data-i18n="hdr.book">Book a call</span></a>
+      <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.aria">
+        <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+        <button type="button" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mm" id="mm-floors">
+    <div class="wrap mm__in">
+      <div>
+        <h4 data-i18n="mm.material">By material</h4>
+        <ul>
+          <li><a href="#shop" data-tab="material" data-close data-i18n="lvp.h">Luxury vinyl plank</a></li>
+          <li><a href="#shop" data-tab="material" data-close data-i18n="lam.h">Laminate</a></li>
+          <li><a href="#shop" data-tab="material" data-close data-i18n="hw.h">Hardwood</a></li>
+          <li><a href="#shop" data-tab="material" data-close data-i18n="tile.h">Tile</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="mm.color">By color</h4>
+        <ul>
+          <li><a href="#shop" data-tab="color" data-close data-i18n="c.light">Light and blonde</a></li>
+          <li><a href="#shop" data-tab="color" data-close data-i18n="c.natural">Natural oak</a></li>
+          <li><a href="#shop" data-tab="color" data-close data-i18n="c.brown">Warm brown</a></li>
+          <li><a href="#shop" data-tab="color" data-close data-i18n="c.dark">Dark walnut</a></li>
+          <li><a href="#shop" data-tab="color" data-close data-i18n="c.gray">Gray wash</a></li>
+          <li><a href="#shop" data-tab="color" data-close data-i18n="c.white">White and cream</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="mm.project">By project</h4>
+        <ul>
+          <li><a href="#shop" data-tab="project" data-close data-i18n="p.rent">Rentals and turnovers</a></li>
+          <li><a href="#shop" data-tab="project" data-close data-i18n="p.kb">Kitchens and baths</a></li>
+          <li><a href="#shop" data-tab="project" data-close data-i18n="p.whole">Whole-house remodels</a></li>
+          <li><a href="#shop" data-tab="project" data-close data-i18n="p.new">New builds</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="also.h">Also available</h4>
+        <ul>
+          <li data-i18n="also.1">Cabinets</li>
+          <li data-i18n="also.2">Trim and baseboards</li>
+          <li data-i18n="also.3">Shower doors</li>
+          <li data-i18n="also.4">Quartz countertops</li>
+          <li data-i18n="also.5">Vanities</li>
+          <li data-i18n="also.6">Closet built-ins</li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="mm.quick">Quick links</h4>
+        <ul>
+          <li><a href="#picks" data-close data-i18n="mm.picks">This month’s three</a></li>
+          <li><a href="#victor" data-close data-i18n="victor.tag">Ask Victor</a></li>
+          <li><a href="#book" data-close data-i18n="res.quote">Get a quote</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="mm" id="mm-res">
+    <div class="wrap mm__in mm__in--sm">
+      <div>
+        <h4 data-i18n="res.learn">Learn</h4>
+        <ul>
+          <li><a href="#how" data-close data-i18n="nav.how">How it works</a></li>
+          <li><a href="#site" data-close data-i18n="site.h">See it on site</a></li>
+          <li><a href="#faq" data-close data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="res.order">Ordering</h4>
+        <ul>
+          <li><a href="#delivery" data-close data-i18n="res.hours">Delivery and hours</a></li>
+          <li><a href="#book" data-close data-i18n="res.quote">Get a quote</a></li>
+          <li><a href="#about" data-close data-i18n="save.h">Save our number</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="res.contact">Contact</h4>
+        <ul>
+          <li><a href="tel:+16196786938">(619) 678-6938</a></li>
+          <li><a href="sms:+16196786938" data-i18n="ftr.text">Text us</a></li>
+          <li><a href="https://wa.me/16196786938" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://www.instagram.com/jovicflooringsupply/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__scrim" data-drawer-close></div>
+  <div class="drawer__panel" role="dialog" aria-modal="true" aria-label="Menu" data-i18n-attr="aria-label:menu.label">
+    <div class="drawer__top">
+      <img src="assets/img/logo-wordmark.svg" alt="Jovic Flooring Supply" width="139" height="38">
+      <button class="drawer__x" type="button" aria-label="Close menu" data-i18n-attr="aria-label:menu.close" data-drawer-close><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    </div>
+    <nav aria-label="Main" data-i18n-attr="aria-label:nav.aria">
+      <details>
+        <summary data-i18n="nav.floors">Shop floors</summary>
+        <div class="drawer__sub">
+          <h4 data-i18n="mm.material">By material</h4>
+          <a href="#shop" data-tab="material" data-drawer-close data-i18n="lvp.h">Luxury vinyl plank</a>
+          <a href="#shop" data-tab="material" data-drawer-close data-i18n="lam.h">Laminate</a>
+          <a href="#shop" data-tab="material" data-drawer-close data-i18n="hw.h">Hardwood</a>
+          <a href="#shop" data-tab="material" data-drawer-close data-i18n="tile.h">Tile</a>
+          <h4 data-i18n="mm.more">More ways to shop</h4>
+          <a href="#shop" data-tab="color" data-drawer-close data-i18n="mm.color">By color</a>
+          <a href="#shop" data-tab="project" data-drawer-close data-i18n="mm.project">By project</a>
+          <a href="#picks" data-drawer-close data-i18n="mm.picks">This month’s three</a>
+        </div>
+      </details>
+      <details>
+        <summary data-i18n="nav.resources">Resources</summary>
+        <div class="drawer__sub">
+          <a href="#how" data-drawer-close data-i18n="nav.how">How it works</a>
+          <a href="#site" data-drawer-close data-i18n="site.h">See it on site</a>
+          <a href="#faq" data-drawer-close data-i18n="nav.faq">FAQ</a>
+          <a href="#about" data-drawer-close data-i18n="save.h">Save our number</a>
+        </div>
+      </details>
+      <a class="d__a" href="#delivery" data-drawer-close data-i18n="nav.delivery">Delivery area</a>
+      <a class="d__a" href="#about" data-drawer-close data-i18n="nav.about">About us</a>
+    </nav>
+    <div class="drawer__cta">
+      <a class="btn btn--gold" href="#book" data-drawer-close><span data-i18n="hdr.book">Book a call</span></a>
+      <div class="row2">
+        <a class="btn btn--line-l" href="tel:+16196786938"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="bar.call">Call</span></a>
+        <a class="btn btn--line-l" href="sms:+16196786938"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="bar.text">Text</span></a>
+      </div>
+    </div>
+    <div class="lang" role="group" aria-label="Language" data-i18n-attr="aria-label:lang.aria">
+      <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+      <button type="button" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="collage" aria-hidden="true">
+      <div class="collage__grid">
+        <div class="col"><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-forklift.jpg" tabindex="-1"><source src="assets/video/loop-forklift.mp4" type="video/mp4"></video><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/video/loop-forklift.jpg" alt=""><img src="assets/img/c-phone-walk.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""></div>
+        <div class="col col--b"><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-samples.jpg" tabindex="-1"><source src="assets/video/loop-samples.mp4" type="video/mp4"></video><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""><img src="assets/video/loop-samples.jpg" alt=""><img src="assets/img/c-warehouse.jpg" alt=""><img src="assets/img/c-planks.jpg" alt=""></div>
+        <div class="col"><img src="assets/img/c-racks.jpg" alt=""><video autoplay muted loop playsinline preload="auto" poster="assets/video/loop-planks.jpg" tabindex="-1"><source src="assets/video/loop-planks.mp4" type="video/mp4"></video><img src="assets/img/c-phone.jpg" alt=""><img src="assets/img/c-racks.jpg" alt=""><img src="assets/video/loop-planks.jpg" alt=""><img src="assets/img/c-phone.jpg" alt=""></div>
+        <div class="col"><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""><img src="assets/img/c-samples.jpg" alt=""><img src="assets/img/c-forklift.jpg" alt=""><img src="assets/img/c-moss.jpg" alt=""></div>
+      </div>
+    </div>
+    <div class="wrap hero__body">
+      <p class="hero__label">Jovic Flooring Supply</p>
+      <h1 id="hero-h" data-i18n="hero.h1">Your crew is ready. Your floors should be too.</h1>
+      <p class="hero__sub" data-i18n="hero.sub">In stock. Delivered. Let us help you.</p>
+      <div class="hero__cta">
+        <a class="btn btn--gold" href="#book"><span data-i18n="hero.cta1">Book a call</span></a>
+        <a class="btn btn--line-d" href="#shop"><span data-i18n="hero.cta2">See the floors</span></a>
+      </div>
+    </div>
+    <button class="hero__pause" type="button" aria-pressed="false" aria-label="Pause background motion">
+      <svg class="ic i-pause" aria-hidden="true"><use href="#i-pause"/></svg><svg class="ic i-play" aria-hidden="true"><use href="#i-play"/></svg>
+    </button>
+  </section>
+
+  <section class="band" aria-label="Highlights" data-i18n-attr="aria-label:proof.aria">
+    <div class="wrap band__in">
+      <p class="band__stat"><span data-i18n="band.l1">Mon to Sat</span><span data-i18n="band.l2">Delivered to your site</span></p>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span data-i18n="mq.1">In stock, delivered to your job site.</span><span data-i18n="mq.2">Supply only. We never compete for your install.</span><span data-i18n="mq.3">A real person answers, never a bot.</span><span data-i18n="mq.4">Full-box samples on your site.</span><span data-i18n="mq.5">Family-owned in San Diego.</span>
+          <span data-i18n="mq.1">In stock, delivered to your job site.</span><span data-i18n="mq.2">Supply only. We never compete for your install.</span><span data-i18n="mq.3">A real person answers, never a bot.</span><span data-i18n="mq.4">Full-box samples on your site.</span><span data-i18n="mq.5">Family-owned in San Diego.</span>
+        </div>
+      </div>
+      <ul class="sr-only">
+        <li data-i18n="mq.1">In stock, delivered to your job site.</li><li data-i18n="mq.2">Supply only. We never compete for your install.</li><li data-i18n="mq.3">A real person answers, never a bot.</li><li data-i18n="mq.4">Full-box samples on your site.</li><li data-i18n="mq.5">Family-owned in San Diego.</li>
+      </ul>
+      <p class="band__stat band__stat--r"><span data-i18n="band.r1">Border to Oceanside</span><span data-i18n="band.r2">Delivery area</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="victor">
+    <div class="wrap">
+      <div class="feature rv">
+        <img class="feature__bg" src="assets/img/feature-victor.jpg" alt="" width="1600" height="900" loading="lazy" decoding="async">
+        <span class="mtag feature__tag" data-i18n="victor.tag">Ask Victor</span>
+        <button class="play feature__play" type="button" data-video="intro" aria-label="Play Victor’s intro video" data-i18n-attr="aria-label:victor.play"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg></button>
+        <div class="feature__body">
+          <p class="eyebrow" data-i18n="victor.featured">Meet the owner</p>
+          <h2 class="feature__h" data-i18n="victor.h2">“Hey guys, I’m Victor.”</h2>
+          <p class="feature__p" data-i18n="victor.p">“Owner of Jovic Flooring Supply here in San Diego. We supply contractors, flippers, and investors with flooring and everything for the remodel. In stock, one call, and deliver straight to the job site.”</p>
+          <div class="feature__cta">
+            <button class="btn btn--gold" type="button" data-video="intro"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span data-i18n="victor.watch">Watch his intro</span><span class="dur">0:19</span></button>
+            <a class="btn btn--line-d" href="sms:+16196786938"><span data-i18n="victor.text">Text Victor</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--tight-top" id="site">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow" data-i18n="site.eyebrow">Straight answers from Victor</p>
+        <h2 class="h2" data-i18n="site.h">Watch before you order</h2>
+      </div>
+      <div class="reels reels--3 rv">
+        <button class="reel" type="button" data-video="intro"><span class="reel__media"><img src="assets/img/v-intro.jpg" alt="" width="720" height="900" loading="lazy" decoding="async"><span class="mtag" data-i18n="site.t1">Meet Victor</span><span class="reel__dur"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>0:19</span></span><span class="reel__t" data-i18n="site.1">Who is Victor?</span></button>
+        <button class="reel" type="button" data-video="faq"><span class="reel__media"><img src="assets/img/v-faq.jpg" alt="" width="720" height="900" loading="lazy" decoding="async"><span class="mtag" data-i18n="site.t2">Contractor FAQ</span><span class="reel__dur"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>0:20</span></span><span class="reel__t" data-i18n="site.2">The number one mistake when ordering flooring</span></button>
+        <button class="reel" type="button" data-video="short"><span class="reel__media"><img src="assets/img/v-short.jpg" alt="" width="720" height="900" loading="lazy" decoding="async"><span class="mtag" data-i18n="site.t3">Black Friday</span><span class="reel__dur"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>0:32</span></span><span class="reel__t" data-i18n="site.3">How do I avoid running short mid-job?</span></button>
+      </div>
+      <p class="follow center rv"><span data-i18n="site.more">More videos every week:</span>
+        <a class="tlink" href="https://www.instagram.com/jovicflooringsupply/" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg><span>Instagram</span></a>
+        <a class="tlink" href="https://www.tiktok.com/@jovicflooringsupply" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-tt"/></svg><span>TikTok</span></a>
+        <a class="tlink" href="https://www.youtube.com/@JovicFlooringSupply/shorts" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-yt"/></svg><span>YouTube</span></a>
+      </p>
+    </div>
+  </section>
+
+  <section class="sec" id="shop">
+    <div class="wrap">
+      <div class="head head--row rv">
+        <div>
+          <p class="eyebrow" data-i18n="shop.eyebrow">Picked to look good and hold up</p>
+          <h2 class="h2" data-i18n="shop.h">Shop by</h2>
+          <div class="tabs" role="tablist" aria-label="Shop by" data-i18n-attr="aria-label:tab.aria">
+            <button type="button" role="tab" id="tab-material" aria-controls="pn-material" aria-selected="true" data-i18n="tab.material">Material</button>
+            <button type="button" role="tab" id="tab-color" aria-controls="pn-color" aria-selected="false" tabindex="-1" data-i18n="tab.color">Color</button>
+            <button type="button" role="tab" id="tab-project" aria-controls="pn-project" aria-selected="false" tabindex="-1" data-i18n="tab.project">Project</button>
+          </div>
+        </div>
+        <div class="arrows">
+          <button type="button" class="arrow" data-scroll="-1" aria-label="Previous" data-i18n-attr="aria-label:arr.prev"><svg class="ic" aria-hidden="true"><use href="#i-back"/></svg></button>
+          <button type="button" class="arrow" data-scroll="1" aria-label="Next" data-i18n-attr="aria-label:arr.next"><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+      <div class="panel" id="pn-material" role="tabpanel" aria-labelledby="tab-material">
+        <div class="rail">
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-lvp.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="lvp.h">Luxury vinyl plank</h3><p data-i18n="lvp.s">Waterproof and quick to install. Rentals, kitchens and baths.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-project="lvp" data-interest="lvp.h"><span data-i18n="ask.lvp">Ask about LVP</span></button></article>
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-laminate.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="lam.h">Laminate</h3><p data-i18n="lam.s">The look of wood with a hard-wearing surface.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-project="laminate" data-interest="lam.h"><span data-i18n="ask.lam">Ask about laminate</span></button></article>
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-hardwood.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="hw.h">Hardwood</h3><p data-i18n="hw.s">Real wood for clients who want the look and the longevity.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-project="hardwood" data-interest="hw.h"><span data-i18n="ask.hw">Ask about hardwood</span></button></article>
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-tile.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="tile.h">Tile</h3><p data-i18n="tile.s">Porcelain and ceramic for floors, showers and walls.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-project="tile" data-interest="tile.h"><span data-i18n="ask.tile">Ask about tile</span></button></article>
+        </div>
+      </div>
+
+      <div class="panel" id="pn-color" role="tabpanel" aria-labelledby="tab-color" hidden>
+        <div class="rail">
+          <article class="tile"><div class="tile__img t-light"></div><h3 data-i18n="c.light">Light and blonde</h3><p data-i18n="c.light.s">Bright, airy rooms that feel bigger.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="c.light"><span data-i18n="sw.ask">Ask what’s in stock</span></button></article>
+          <article class="tile"><div class="tile__img t-natural"></div><h3 data-i18n="c.natural">Natural oak</h3><p data-i18n="c.natural.s">The safe pick for resale and rentals.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="c.natural"><span data-i18n="sw.ask">Ask what’s in stock</span></button></article>
+          <article class="tile"><div class="tile__img t-brown"></div><h3 data-i18n="c.brown">Warm brown</h3><p data-i18n="c.brown.s">Classic warmth that hides daily wear.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="c.brown"><span data-i18n="sw.ask">Ask what’s in stock</span></button></article>
+          <article class="tile"><div class="tile__img t-dark"></div><h3 data-i18n="c.dark">Dark walnut</h3><p data-i18n="c.dark.s">Rich and dramatic for statement rooms.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="c.dark"><span data-i18n="sw.ask">Ask what’s in stock</span></button></article>
+          <article class="tile"><div class="tile__img t-gray"></div><h3 data-i18n="c.gray">Gray wash</h3><p data-i18n="c.gray.s">Cool and modern with light or dark walls.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="c.gray"><span data-i18n="sw.ask">Ask what’s in stock</span></button></article>
+          <article class="tile"><div class="tile__img t-white"></div><h3 data-i18n="c.white">White and cream</h3><p data-i18n="c.white.s">Clean tile looks for kitchens and baths.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="c.white"><span data-i18n="sw.ask">Ask what’s in stock</span></button></article>
+        </div>
+        <p class="draft-only" style="margin-top:14px"><span class="tag">Placeholder: color tiles are stand-ins until we have photos of Victor’s stock</span></p>
+      </div>
+
+      <div class="panel" id="pn-project" role="tabpanel" aria-labelledby="tab-project" hidden>
+        <div class="rail">
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-lvp.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="p.rent">Rentals and turnovers</h3><p data-i18n="p.rent.p">Durable, water-resistant floors that get units back on the market fast.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="p.rent"><span data-i18n="ask.this">Ask about this</span></button></article>
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-tile.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="p.kb">Kitchens and baths</h3><p data-i18n="p.kb.p">Waterproof LVP and tile for the rooms that see water every day.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="p.kb"><span data-i18n="ask.this">Ask about this</span></button></article>
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-laminate.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="p.whole">Whole-house remodels</h3><p data-i18n="p.whole.p">One consistent look from the entry to the bedrooms, quoted as one job.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="p.whole"><span data-i18n="ask.this">Ask about this</span></button></article>
+          <article class="tile"><div class="tile__img"><img src="assets/img/floor-hardwood.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"></div><h3 data-i18n="p.new">New builds</h3><p data-i18n="p.new.p">Flooring for new construction, quoted per project and delivered on your schedule.</p><button class="btn btn--gold btn--sm" type="button" data-ask data-interest="p.new"><span data-i18n="ask.this">Ask about this</span></button></article>
+        </div>
+      </div>
+
+      <p class="also rv"><strong data-i18n="also.h">Also available</strong><span data-i18n="also.1">Cabinets</span><span data-i18n="also.2">Trim and baseboards</span><span data-i18n="also.3">Shower doors</span><span data-i18n="also.4">Quartz countertops</span><span data-i18n="also.5">Vanities</span><span data-i18n="also.6">Closet built-ins</span></p>
+    </div>
+  </section>
+
+  <section class="sec sec--white" id="picks">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow" data-i18n="pick.eyebrow">Three floors, not thirty.</p>
+        <h2 class="h2 h2--stack" data-i18n="pick.h">This month’s three</h2>
+        <div class="tabs tabs--static"><span aria-current="true" data-i18n="pick.tab">In stock now</span></div>
+      </div>
+      <div class="picks rv">
+        <article class="pick"><button class="pick__img" type="button" data-quick="1" aria-label="Quick look: Light oak look" data-i18n-attr="aria-label:pick1.ql"><img src="assets/img/floor-lvp.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"><span class="pick__quick"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg><span data-i18n="pick.quick">Quick look</span></span></button><p class="pick__cat" data-i18n="lvp.h">Luxury vinyl plank</p><h3 data-i18n="pick1.name">Light oak look</h3></article>
+        <article class="pick"><button class="pick__img" type="button" data-quick="2" aria-label="Quick look: Warm natural" data-i18n-attr="aria-label:pick2.ql"><img src="assets/img/floor-laminate.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"><span class="pick__quick"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg><span data-i18n="pick.quick">Quick look</span></span></button><p class="pick__cat" data-i18n="lam.h">Laminate</p><h3 data-i18n="pick2.name">Warm natural</h3></article>
+        <article class="pick"><button class="pick__img" type="button" data-quick="3" aria-label="Quick look: Marble look" data-i18n-attr="aria-label:pick3.ql"><img src="assets/img/floor-tile.jpg" alt="" width="1000" height="1250" loading="lazy" decoding="async"><span class="pick__quick"><svg class="ic" aria-hidden="true"><use href="#i-eye"/></svg><span data-i18n="pick.quick">Quick look</span></span></button><p class="pick__cat" data-i18n="pick3.cat">Porcelain tile</p><h3 data-i18n="pick3.name">Marble look</h3></article>
+      </div>
+      <p class="draft-only" style="margin-top:18px"><span class="tag">Placeholder: swap in Victor’s three in-stock floors with their real names and photos</span></p>
+    </div>
+  </section>
+
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="head rv">
+        <p class="eyebrow" data-i18n="how.eyebrow">Simple from the first call</p>
+        <h2 class="h2" data-i18n="how.h">How it works</h2>
+      </div>
+      <ol class="steps rv">
+        <li class="step"><span class="mtag" data-i18n="step.1">Step 01</span><h3 data-i18n="s1.h">Tell us the job</h3><p data-i18n="s1.p">Call, text or book a time. Share the product, the square footage and where it’s going.</p><p class="step__note" data-i18n="s1.n">A photo of the plans or a quick list is enough.</p></li>
+        <li class="step"><span class="mtag" data-i18n="step.2">Step 02</span><h3 data-i18n="s2.h">Get your quote</h3><p data-i18n="s2.p">We price the job for your account and confirm what’s in stock.</p><p class="step__note" data-i18n="s2.n">Contractor pricing, quoted directly.</p></li>
+        <li class="step"><span class="mtag" data-i18n="step.3">Step 03</span><h3 data-i18n="s3.h">Schedule delivery</h3><p data-i18n="s3.p">Pick a day, Monday to Saturday between 8am and 5pm, and we bring it to your site.</p><p class="step__note" data-i18n="s3.n">San Diego up to Oceanside.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec sec--tight-top draft-only" id="proofs">
+    <div class="wrap">
+      <div class="head"><p class="eyebrow">Reviews</p><h2 class="h2">What contractors say</h2></div>
+      <div class="quotes">
+        <div class="quote"><span class="tag">Placeholder</span><p>Add a short quote from Luna Builders once Victor shares their name and a go-ahead to publish.</p></div>
+        <div class="quote"><span class="tag">Placeholder</span><p>Add a second client quote here. Needs the client’s name and permission.</p></div>
+        <div class="quote"><span class="tag">Placeholder</span><p>Add the contractor Instagram review that praises delivery and material quality, with permission.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--white" id="about">
+    <div class="wrap about">
+      <div class="about__media rv">
+        <img class="bg" src="assets/img/about-victor.jpg" alt="Victor, owner of Jovic Flooring Supply, on the phone with a customer" data-i18n-attr="alt:about.alt" width="1000" height="1250" loading="lazy" decoding="async">
+        <img class="badge" src="assets/img/badge-320.png" alt="Jovic Flooring Supply" width="320" height="320" loading="lazy" decoding="async">
+        <span class="mtag about__mtag" data-i18n="about.tag">Family-owned</span>
+        <span class="mtag about__cap" data-i18n="about.cap">Victor, owner</span>
+      </div>
+      <div class="about__copy rv">
+        <p class="eyebrow" data-i18n="about.eyebrow">Our story</p>
+        <h2 class="h2" data-i18n="about.h">Family-owned in San Diego</h2>
+        <p class="lede" data-i18n="about.p1">Jovic Flooring Supply opened in 2026 to give San Diego’s contractors, builders and property managers a flooring supplier they can count on: straight answers, fair quotes and deliveries that show up.</p>
+        <p data-i18n="about.p2">We keep it simple. We supply the material, you bring the crew, and the job stays on schedule.</p>
+        <div class="save">
+          <div>
+            <h3 data-i18n="save.h">Save our number</h3>
+            <p data-i18n="save.p">New business numbers sometimes get flagged as spam. Save Jovic to your contacts so you never miss our call.</p>
+          </div>
+          <a class="btn btn--ink" href="jovic-flooring-supply.vcf" download="Jovic Flooring Supply.vcf"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg><span data-i18n="save.btn">Save contact</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="delivery">
+    <div class="wrap area">
+      <div class="rv">
+        <p class="eyebrow" data-i18n="area.eyebrow">Delivery area</p>
+        <h2 class="h2" data-i18n="area.h">Delivering across San Diego</h2>
+        <p class="lede" data-i18n="area.p">From the border to Oceanside, we bring flooring to your job site. Working farther north, up to Temecula? Ask us for an estimate.</p>
+        <dl class="hours">
+          <div><dt data-i18n="hrs.1k">Monday to Saturday</dt><dd data-i18n="hrs.1v">7am to 5pm</dd></div>
+          <div><dt data-i18n="hrs.2k">Deliveries, Monday to Saturday</dt><dd data-i18n="hrs.2v">8am to 5pm</dd></div>
+          <div><dt data-i18n="hrs.3k">Sunday</dt><dd data-i18n="hrs.3v">Closed</dd></div>
+        </dl>
+        <p class="hours__note" data-i18n="hrs.note">Questions about timing? Call or text and we’ll confirm your delivery window.</p>
+      </div>
+      <div class="map rv">
+<svg viewBox="0 0 560 755" role="img" aria-labelledby="map-t" data-i18n-attr="aria-label:map.aria">
+<title id="map-t" data-i18n="map.aria">Schematic map of the delivery area from the Mexican border north to Oceanside, with estimates available up to Temecula.</title>
+<defs><clipPath id="land"><path d="M-22.4 0.0L11.2 40.1L50.4 86.8L100.7 113.5L128.7 153.6L167.9 200.3L207.1 233.7L223.9 260.4L251.8 293.8L274.2 333.9L279.8 373.9L296.6 407.3L296.6 427.3L302.2 454.0L302.2 494.1L291.0 507.5L302.2 534.2L305.0 560.9L303.3 587.6L307.8 607.6L311.7 623.0L325.7 619.6L340.3 614.3L348.1 627.6L362.7 654.3L372.2 681.1L378.9 711.8L391.8 754.5L559.7 754.5L559.7 0.0Z"/></clipPath><linearGradient id="sea" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1630"/><stop offset="1" stop-color="#08101F"/></linearGradient><pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="10" fill="#1C2B4B"/><path d="M0 0V10" stroke="#D7AE4A" stroke-opacity=".55" stroke-width="2.2"/></pattern><pattern id="hatch2" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="14" height="14" fill="#16233F"/><path d="M0 0V14" stroke="#D7AE4A" stroke-opacity=".22" stroke-width="1.6"/></pattern></defs>
+<rect width="560" height="755" fill="url(#sea)"/>
+<path d="M0 66.8H560" stroke="#fff" stroke-opacity=".035"/>
+<path d="M0 233.7H560" stroke="#fff" stroke-opacity=".035"/>
+<path d="M0 400.6H560" stroke="#fff" stroke-opacity=".035"/>
+<path d="M0 567.5H560" stroke="#fff" stroke-opacity=".035"/>
+<path d="M0 734.5H560" stroke="#fff" stroke-opacity=".035"/>
+<path d="M28.0 0V755" stroke="#fff" stroke-opacity=".035"/>
+<path d="M167.9 0V755" stroke="#fff" stroke-opacity=".035"/>
+<path d="M307.8 0V755" stroke="#fff" stroke-opacity=".035"/>
+<path d="M447.7 0V755" stroke="#fff" stroke-opacity=".035"/>
+<path d="M-22.4 0.0L11.2 40.1L50.4 86.8L100.7 113.5L128.7 153.6L167.9 200.3L207.1 233.7L223.9 260.4L251.8 293.8L274.2 333.9L279.8 373.9L296.6 407.3L296.6 427.3L302.2 454.0L302.2 494.1L291.0 507.5L302.2 534.2L305.0 560.9L303.3 587.6L307.8 607.6L311.7 623.0L325.7 619.6L340.3 614.3L348.1 627.6L362.7 654.3L372.2 681.1L378.9 711.8L391.8 754.5L559.7 754.5L559.7 0.0Z" fill="#13203D" stroke="#9FB0CF" stroke-opacity=".4" stroke-width="1.3" stroke-linejoin="round"/>
+<g clip-path="url(#land)">
+<path d="M167.9 210.3L-22.4 0.0L464.5 0.0L475.7 133.5L430.9 260.4L352.6 220.3L279.8 210.3Z" fill="url(#hatch2)" stroke="#D7AE4A" stroke-opacity=".8" stroke-width="1.6" stroke-dasharray="6 6"/>
+<path d="M167.9 210.3L279.8 210.3L352.6 220.3L430.9 260.4L486.9 373.9L523.3 520.8L492.5 654.3L447.7 734.5L447.7 754.5L167.9 754.5Z" fill="url(#hatch)" stroke="#D7AE4A" stroke-width="2"/>
+</g>
+<path d="M315.6 607.6L328.0 596.9L347.0 590.2L369.4 600.9L385.0 622.3L391.8 649.0L385.0 659.7L372.2 642.3L358.2 625.0L341.4 617.0L323.5 617.0Z" fill="#0A1326" stroke="#9FB0CF" stroke-opacity=".35" stroke-width="1.1"/>
+<path d="M380.9 711.8H560" stroke="#E9ECF1" stroke-opacity=".4" stroke-dasharray="2 5" stroke-width="1.4"/>
+<text x="542" y="731.8" text-anchor="end" fill="#A8B1C0" font-size="15" font-weight="600" letter-spacing=".08em" data-i18n="map.mexico">Mexico</text>
+<text x="26" y="387" fill="#A8B1C0" font-size="15" font-weight="600" letter-spacing=".08em" opacity=".8" data-i18n="map.ocean">Pacific Ocean</text>
+<circle cx="235.1" cy="269.8" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="249.1" y="274.8" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Oceanside</text>
+<circle cx="251.3" cy="295.1" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="265.3" y="300.1" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Carlsbad</text>
+<circle cx="284.3" cy="375.9" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="298.3" y="380.9" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Encinitas</text>
+<circle cx="299.4" cy="427.3" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="313.4" y="432.3" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Del Mar</text>
+<circle cx="295.5" cy="512.1" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="309.5" y="517.1" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">La Jolla</text>
+<circle cx="357.6" cy="590.2" r="11" fill="#D7AE4A" stroke="#0A1326" stroke-width="3.5"/>
+<text class="cl hub" x="371.6" y="595.2" text-anchor="start" fill="#E9ECF1" font-size="20" font-weight="750" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">San Diego</text>
+<circle cx="400.7" cy="641.0" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="414.7" y="646.0" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Chula Vista</text>
+<circle cx="468.4" cy="537.5" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="454.4" y="542.5" text-anchor="end" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">El Cajon</text>
+<circle cx="399.6" cy="321.2" r="6" fill="#F2D58A" stroke="#0A1326" stroke-width="2.4"/>
+<text class="cl" x="413.6" y="326.2" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Escondido</text>
+<circle cx="364.9" cy="70.8" r="6.5" fill="#0A1326" stroke="#D7AE4A" stroke-width="2.4"/>
+<text class="cl" x="378.9" y="75.8" text-anchor="start" fill="#E9ECF1" font-size="16" font-weight="600" paint-order="stroke" stroke="#0A1326" stroke-width="4" stroke-opacity=".7">Temecula</text>
+<rect x="22" y="685" width="22" height="14" rx="2" fill="url(#hatch)" stroke="#D7AE4A" stroke-width="1.8"/>
+<text class="lg" x="54" y="697" fill="#E9ECF1" font-size="16" font-weight="600" data-i18n="map.l1">We deliver here</text>
+<rect x="22" y="711" width="22" height="14" rx="2" fill="url(#hatch2)" stroke="#D7AE4A" stroke-width="1.8" stroke-dasharray="4 4"/>
+<text class="lg" x="54" y="723" fill="#E9ECF1" font-size="16" font-weight="600" data-i18n="map.l2">Estimates on request</text>
+<text x="22" y="26" fill="#A8B1C0" font-size="13" opacity=".85" data-i18n="map.schem">Schematic map, not to scale</text>
+</svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--white" id="faq">
+    <div class="wrap faqwrap">
+      <div class="rv">
+        <p class="eyebrow" data-i18n="faq.eyebrow">Good to know</p>
+        <h2 class="h2" data-i18n="faq.h">Questions we hear a lot</h2>
+        <p class="lede" data-i18n="faq.p">Don’t see yours? Text us and a person will answer.</p>
+      </div>
+      <div class="faq rv">
+        <details><summary data-i18n="faq.v1q">How do I avoid running short halfway through a job?</summary><p data-i18n="faq.v1a">Order everything at once, plus your waste. Same lot, same color, all delivered together. Different lots mean mismatched floors, and to a homeowner that always shows.</p><button class="tlink faq__watch" type="button" data-video="short"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span data-i18n="faq.watch">Watch Victor answer this</span></button></details>
+        <details><summary data-i18n="faq.v2q">What’s the number one mistake when ordering flooring?</summary><p data-i18n="faq.v2a">Ordering short just to save a few bucks. The next batch can be a different lot that doesn’t match. Order once, order right, and add your 10%.</p><button class="tlink faq__watch" type="button" data-video="faq"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span data-i18n="faq.watch">Watch Victor answer this</span></button></details>
+        <details><summary data-i18n="faq.1q">Do you install flooring?</summary><p data-i18n="faq.1a">No. Jovic is supply only. We provide the material and your crew handles the install.</p></details>
+        <details><summary data-i18n="faq.2q">Where do you deliver?</summary><p data-i18n="faq.2a">We deliver across San Diego and north to Oceanside. Working farther out, up to Temecula? Ask us for an estimate.</p></details>
+        <details><summary data-i18n="faq.3q">What are your hours?</summary><p data-i18n="faq.3a">Monday to Saturday, 7am to 5pm. Deliveries run 8am to 5pm. We’re closed on Sundays.</p></details>
+        <details><summary data-i18n="faq.4q">How do I get a price?</summary><p data-i18n="faq.4a">Contractor pricing depends on the job, so we quote directly. Call, text or send the form and we’ll get back to you.</p></details>
+        <details><summary data-i18n="faq.5q">How can I pay?</summary><p data-i18n="faq.5a">We accept Zelle, card and financing. We’ll confirm the options when we quote your job.</p><p class="draft-only" style="padding-bottom:20px"><span class="tag">Confirm card and financing wording with Victor</span></p></details>
+        <details><summary data-i18n="faq.6q">What else do you carry?</summary><p data-i18n="faq.6a">Cabinets, trim and baseboards, shower doors, quartz countertops, vanities and closet built-ins. Ask if you need something not listed.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec book" id="book">
+    <div class="wrap book__grid">
+      <div class="rv">
+        <h2 class="book__h"><span data-i18n="book.h1">Still not sure?</span> <span class="hl" data-i18n="book.h2">Ask Victor.</span></h2>
+        <p class="lede" data-i18n="book.p">He’ll tell you what he’d put down on your job, not just what’s popular. Leave your details and a person from our team will call you at a time that works.</p>
+        <p class="tlinks">
+          <a class="tlink" href="sms:+16196786938"><span data-i18n="text.btn">Text</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+          <a class="tlink" href="tel:+16196786938"><span data-i18n="call.btn">Call</span> (619) 678-6938<svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+          <a class="tlink" href="https://wa.me/16196786938" target="_blank" rel="noopener"><span>WhatsApp</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+          <a class="tlink" href="https://ig.me/m/jovicflooringsupply" target="_blank" rel="noopener"><span data-i18n="book.ig">IG DM</span><svg class="ic" aria-hidden="true"><use href="#i-out"/></svg></a>
+        </p>
+      </div>
+      <form class="form rv" id="lead" novalidate>
+        <div class="chat__top">
+          <img src="assets/img/victor-avatar.jpg" alt="" width="40" height="40">
+          <div><strong>Victor</strong><span>Jovic Flooring Supply</span></div>
+          <a href="tel:+16196786938" class="chat__call" aria-label="Call (619) 678-6938" data-i18n-attr="aria-label:hdr.callaria"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg></a>
+        </div>
+        <div class="fields">
+          <p class="bubble" data-i18n="chat.b1">Hi! Tell me what you’re working on and I’ll call you back with stock and a quote.</p>
+          <p class="ctx" id="f-ctx" hidden><span data-i18n="ctx.label">Asking about:</span> <b id="f-ctx-v"></b><button type="button" id="f-ctx-x" data-i18n="ctx.clear">Clear</button></p>
+          <div class="row">
+            <div class="field"><label for="f-first" data-i18n="f.first">First name</label><input id="f-first" name="first" type="text" autocomplete="given-name" aria-describedby="e-first"><span class="err" id="e-first"></span></div>
+            <div class="field"><label for="f-last" data-i18n="f.last">Last name</label><input id="f-last" name="last" type="text" autocomplete="family-name" aria-describedby="e-last"><span class="err" id="e-last"></span></div>
+          </div>
+          <div class="field"><label for="f-phone" data-i18n="f.phone">Phone</label><input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(619) 555-0123" aria-describedby="e-phone"><span class="err" id="e-phone"></span></div>
+          <div class="row">
+            <div class="field"><label for="f-project" data-i18n="f.project">Project type</label>
+              <select id="f-project" name="project" aria-describedby="e-project">
+                <option value="" data-i18n="f.choose">Choose one</option>
+                <option value="lvp" data-i18n="f.p1">LVP</option>
+                <option value="laminate" data-i18n="f.p2">Laminate</option>
+                <option value="hardwood" data-i18n="f.p3">Hardwood</option>
+                <option value="tile" data-i18n="f.p4">Tile</option>
+                <option value="cabinets-trim-shower-doors" data-i18n="f.p5">Cabinets, trim or shower doors</option>
+                <option value="quartz-vanities" data-i18n="f.p6">Quartz or vanities</option>
+                <option value="other" data-i18n="f.p7">Something else</option>
+              </select><span class="err" id="e-project"></span></div>
+            <div class="field"><label for="f-time" data-i18n="f.time">Best time to call</label>
+              <select id="f-time" name="time">
+                <option value="morning" data-i18n="f.t1">Morning</option>
+                <option value="midday" data-i18n="f.t2">Midday</option>
+                <option value="afternoon" data-i18n="f.t3">Afternoon</option>
+                <option value="any" data-i18n="f.t4" selected>Any time</option>
+              </select></div>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Website <input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <input type="hidden" name="offer" id="f-offer" value="">
+          <input type="hidden" name="interest" id="f-interest" value="">
+          <button class="btn btn--gold btn--block" type="submit" id="f-submit"><span data-i18n="f.submit">Request a call</span></button>
+          <p class="form__fine" data-i18n="f.fine">We’ll only use your number to call or text you about this request.</p>
+          <p class="form__status" id="f-status" role="status" aria-live="polite"></p>
+
+        </div>
+        <div class="done" id="f-done" tabindex="-1">
+          <p class="bubble bubble--me" data-i18n="done.h">Got it, thank you.</p>
+          <p class="bubble" data-i18n="done.p">A person from our team will call you soon. Need it sooner? Call or text (619) 678-6938.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <img class="wm" src="assets/img/logo-wordmark.svg" alt="Jovic Flooring Supply" width="183" height="50" loading="lazy">
+    <div class="ftr__grid">
+      <div>
+        <h3 data-i18n="ftr.floors">Floors</h3>
+        <ul>
+          <li><a href="#shop" data-tab="material" data-i18n="lvp.h">Luxury vinyl plank</a></li>
+          <li><a href="#shop" data-tab="material" data-i18n="lam.h">Laminate</a></li>
+          <li><a href="#shop" data-tab="material" data-i18n="hw.h">Hardwood</a></li>
+          <li><a href="#shop" data-tab="material" data-i18n="tile.h">Tile</a></li>
+          <li><a href="#picks" data-i18n="mm.picks">This month’s three</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="ftr.know">Get to know us</h3>
+        <ul>
+          <li><a href="#about" data-i18n="nav.about">About us</a></li>
+          <li><a href="#how" data-i18n="nav.how">How it works</a></li>
+          <li><a href="#delivery" data-i18n="nav.delivery">Delivery area</a></li>
+          <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-i18n="ftr.contact">Contact</h3>
+        <ul>
+          <li><a href="tel:+16196786938">(619) 678-6938</a></li>
+          <li><a href="sms:+16196786938" data-i18n="ftr.text">Text us</a></li>
+          <li data-i18n="ftr.h1">Monday to Saturday, 7am to 5pm</li>
+          <li data-i18n="ftr.h2">Deliveries 8am to 5pm</li>
+          <li data-i18n="ftr.h3">Closed Sundays</li>
+        </ul>
+      </div>
+      <div class="ftr__save">
+        <h3 data-i18n="save.h">Save our number</h3>
+        <p data-i18n="ftr.save.p">So our calls never show up as spam.</p>
+        <a class="btn btn--line-d btn--sm" href="jovic-flooring-supply.vcf" download="Jovic Flooring Supply.vcf"><svg class="ic" aria-hidden="true"><use href="#i-user"/></svg><span data-i18n="save.btn">Save contact</span></a>
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://www.instagram.com/jovicflooringsupply/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg></a>
+      <a href="https://www.tiktok.com/@jovicflooringsupply" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic" aria-hidden="true"><use href="#i-tt"/></svg></a>
+      <a href="https://www.youtube.com/@JovicFlooringSupply/shorts" target="_blank" rel="noopener" aria-label="YouTube"><svg class="ic" aria-hidden="true"><use href="#i-yt"/></svg></a>
+      <a href="https://wa.me/16196786938" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg></a>
+      <span class="tag draft-only">Add the Facebook page link</span>
+    </div>
+    <div class="ftr__base"><span data-i18n="ftr.copy">© 2026 Jovic Flooring Supply. All rights reserved.</span><span data-i18n="ftr.area">Serving San Diego, delivering up to Oceanside.</span></div>
+  </div>
+</footer>
+
+<a class="help" href="#book"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="help">Need help?</span></a>
+
+<div class="bar" role="navigation" aria-label="Quick contact" data-i18n-attr="aria-label:bar.aria">
+  <a class="btn btn--line-d" href="tel:+16196786938"><svg class="ic" aria-hidden="true"><use href="#i-phone"/></svg><span data-i18n="bar.call">Call</span></a>
+  <a class="btn btn--line-d" href="sms:+16196786938"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="bar.text">Text</span></a>
+  <a class="btn btn--gold" href="#book"><span data-i18n="bar.book">Book a call</span></a>
+</div>
+
+<div class="modal" id="ql" role="dialog" aria-modal="true" aria-labelledby="ql-h" aria-hidden="true">
+  <div class="ql__box">
+    <button class="modal__x" type="button" aria-label="Close" data-i18n-attr="aria-label:promo.close" data-ql-close><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <div class="ql__img"><img id="ql-img" src="assets/img/floor-lvp.jpg" alt="" width="1000" height="1250"></div>
+    <div class="ql__body">
+      <span class="pick__cat" id="ql-cat"></span>
+      <h2 id="ql-h"></h2>
+      <p id="ql-d"></p>
+      <dl class="ql__dl">
+        <div><dt data-i18n="ql.best">Best for</dt><dd id="ql-best"></dd></div>
+        <div><dt data-i18n="ql.price">Price</dt><dd data-i18n="ql.price.v">Quoted for your job</dd></div>
+        <div><dt data-i18n="ql.del">Delivery</dt><dd data-i18n="ql.del.v">To your site, up to Oceanside</dd></div>
+      </dl>
+      <div class="ql__cta">
+        <button class="btn btn--gold" type="button" id="ql-ask"><span data-i18n="ql.ask">Ask about this floor</span></button>
+        <a class="btn btn--line-l" href="sms:+16196786938"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><span data-i18n="victor.text">Text Victor</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="promo" role="dialog" aria-modal="true" aria-labelledby="promo-h" aria-hidden="true">
+  <div class="promo__box">
+    <button class="modal__x" type="button" aria-label="Close" data-i18n-attr="aria-label:promo.close" data-promo-close><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <span class="mtag" data-i18n="promo.tag">Black Friday</span>
+    <h2 id="promo-h"></h2>
+    <p id="promo-p"></p>
+    <button class="tlink promo__watch" type="button" data-video="short"><svg class="ic" aria-hidden="true"><use href="#i-play"/></svg><span data-i18n="promo.watch">Watch Victor’s Black Friday video</span></button>
+    <p class="promo__fine" data-i18n="promo.fine">Sale ends November 27. Call or text (619) 678-6938 to lock it in.</p>
+    <div class="promo__cta">
+      <a class="btn btn--gold" href="#book" data-promo-claim data-i18n="promo.cta">Claim this offer</a>
+      <button class="promo__no" type="button" data-promo-close data-i18n="promo.no">Not now</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="vid" role="dialog" aria-modal="true" aria-labelledby="vid-h" aria-hidden="true">
+  <div class="vid__box">
+    <button class="modal__x" type="button" aria-label="Close" data-i18n-attr="aria-label:promo.close" data-vid-close><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg></button>
+    <video id="vid-v" controls playsinline preload="none"></video>
+    <div class="vid__bar">
+      <h2 id="vid-h"></h2>
+      <a class="btn btn--gold btn--sm" href="sms:+16196786938"><span data-i18n="victor.text">Text Victor</span></a>
+    </div>
+  </div>
+</div>
+
+<div class="draftchip tag draft-only">Draft 4: real footage from the 11/11 shoot. Picks, reviews and the form still need Victor</div>
+
+<script>
+/* English and Spanish text for every data-i18n key on the page. */
+window.JOVIC_I18N={
+"en": {
+"meta.title": "Jovic Flooring Supply | Flooring for San Diego contractors",
+"meta.desc": "Family-owned flooring supplier in San Diego. LVP, laminate, hardwood and tile for contractors, builders and property managers, delivered to your job site Monday to Saturday.",
+"skip": "Skip to content",
+"ann.full": "In stock, delivered to your job site. San Diego to Oceanside, Monday to Saturday.",
+"ann.short": "In stock, delivered to your job site.",
+"menu.open": "Open menu",
+"menu.close": "Close menu",
+"menu.label": "Menu",
+"nav.aria": "Main",
+"nav.floors": "Shop floors",
+"nav.resources": "Resources",
+"nav.delivery": "Delivery area",
+"nav.about": "About us",
+"nav.how": "How it works",
+"nav.faq": "FAQ",
+"lang.aria": "Language",
+"hdr.callaria": "Call (619) 678-6938",
+"hdr.book": "Book a call",
+"mm.material": "By material",
+"mm.color": "By color",
+"mm.project": "By project",
+"mm.picks": "This month’s three",
+"res.learn": "Learn",
+"res.order": "Ordering",
+"res.contact": "Contact",
+"res.hours": "Delivery and hours",
+"res.quote": "Get a quote",
+"c.light": "Light and blonde",
+"c.natural": "Natural oak",
+"c.brown": "Warm brown",
+"c.dark": "Dark walnut",
+"c.gray": "Gray wash",
+"c.white": "White and cream",
+"p.rent": "Rentals and turnovers",
+"p.kb": "Kitchens and baths",
+"p.whole": "Whole-house remodels",
+"p.new": "New builds",
+"p.rent.p": "Durable, water-resistant floors that get units back on the market fast.",
+"p.kb.p": "Waterproof LVP and tile for the rooms that see water every day.",
+"p.whole.p": "One consistent look from the entry to the bedrooms, quoted as one job.",
+"p.new.p": "Flooring for new construction, quoted per project and delivered on your schedule.",
+"hero.h1": "Your crew is ready. Your floors should be too.",
+"hero.sub": "In stock. One call. Straight to the job site.",
+"hero.cta1": "Book a call",
+"hero.cta2": "See the floors",
+"hero.pause": "Pause background motion",
+"hero.play": "Play background motion",
+"proof.aria": "Highlights",
+"victor.text": "Text Victor",
+"victor.play": "Play Victor’s intro video",
+"site.eyebrow": "Straight answers from Victor",
+"site.h": "Watch before you order",
+"site.1": "Who is Victor?",
+"site.2": "The number one mistake when ordering flooring",
+"site.3": "How do I avoid running short mid-job?",
+"site.more": "More videos every week:",
+"shop.eyebrow": "Picked to look good and hold up",
+"shop.h": "Shop by",
+"tab.aria": "Shop by",
+"tab.material": "Material",
+"tab.color": "Color",
+"tab.project": "Project",
+"lvp.h": "Luxury vinyl plank",
+"lam.h": "Laminate",
+"hw.h": "Hardwood",
+"tile.h": "Tile",
+"ask.lvp": "Ask about LVP",
+"ask.lam": "Ask about laminate",
+"ask.hw": "Ask about hardwood",
+"ask.tile": "Ask about tile",
+"ask.this": "Ask about this",
+"sw.ask": "Ask what’s in stock",
+"also.h": "Also available",
+"also.1": "Cabinets",
+"also.2": "Trim and baseboards",
+"also.3": "Shower doors",
+"also.4": "Quartz countertops",
+"also.5": "Vanities",
+"also.6": "Closet built-ins",
+"pick.eyebrow": "Three floors, not thirty.",
+"pick.h": "This month’s three",
+"pick.quick": "Quick look",
+"pick1.name": "Light oak look",
+"pick1.d": "Waterproof and quick to install. Built for rentals, kitchens and baths.",
+"pick1.best": "Rentals, kitchens, baths",
+"pick1.full": "Light oak look LVP",
+"pick2.name": "Warm natural",
+"pick2.d": "The look of wood with a hard-wearing surface for living areas and bedrooms.",
+"pick2.best": "Living rooms, bedrooms, hallways",
+"pick2.full": "Warm natural laminate",
+"pick3.cat": "Porcelain tile",
+"pick3.name": "Marble look",
+"pick3.d": "A clean marble look for floors, showers and walls.",
+"pick3.best": "Floors, showers, walls",
+"pick3.full": "Marble look porcelain tile",
+"ql.best": "Best for",
+"ql.price": "Price",
+"ql.price.v": "Quoted for your job",
+"ql.del": "Delivery",
+"ql.del.v": "To your site, up to Oceanside",
+"ql.ask": "Ask about this floor",
+"how.eyebrow": "Simple from the first call",
+"how.h": "How it works",
+"s1.h": "Tell us the job",
+"s1.p": "Call, text or book a time. Share the product, the square footage and where it’s going.",
+"s1.n": "A photo of the plans or a quick list is enough.",
+"s2.h": "Get your quote",
+"s2.p": "We price the job for your account and confirm what’s in stock.",
+"s2.n": "Contractor pricing, quoted directly.",
+"s3.h": "Schedule delivery",
+"s3.p": "Pick a day, Monday to Saturday between 8am and 5pm, and we bring it to your site.",
+"s3.n": "San Diego up to Oceanside.",
+"about.eyebrow": "Our story",
+"about.h": "Family-owned in San Diego",
+"about.p1": "Jovic Flooring Supply opened in 2026 to give San Diego’s contractors, builders and property managers a flooring supplier they can count on: straight answers, fair quotes and deliveries that show up.",
+"about.p2": "We keep it simple. We supply the material, you bring the crew, and the job stays on schedule.",
+"save.h": "Save our number",
+"save.p": "New business numbers sometimes get flagged as spam. Save Jovic to your contacts so you never miss our call.",
+"save.btn": "Save contact",
+"area.eyebrow": "Delivery area",
+"area.h": "Delivering across San Diego",
+"area.p": "From the border to Oceanside, we bring flooring to your job site. Working farther north, up to Temecula? Ask us for an estimate.",
+"hrs.1k": "Monday to Saturday",
+"hrs.1v": "7am to 5pm",
+"hrs.2k": "Deliveries, Monday to Saturday",
+"hrs.2v": "8am to 5pm",
+"hrs.3k": "Sunday",
+"hrs.3v": "Closed",
+"hrs.note": "Questions about timing? Call or text and we’ll confirm your delivery window.",
+"map.aria": "Schematic map of the delivery area from the Mexican border north to Oceanside, with estimates available up to Temecula.",
+"map.ocean": "Pacific Ocean",
+"map.mexico": "Mexico",
+"map.l1": "We deliver here",
+"map.l2": "Estimates on request",
+"map.schem": "Schematic map, not to scale",
+"faq.eyebrow": "Good to know",
+"faq.h": "Questions we hear a lot",
+"faq.p": "Don’t see yours? Text us and a person will answer.",
+"faq.1q": "Do you install flooring?",
+"faq.1a": "No. Jovic is supply only. We provide the material and your crew handles the install.",
+"faq.2q": "Where do you deliver?",
+"faq.2a": "We deliver across San Diego and north to Oceanside. Working farther out, up to Temecula? Ask us for an estimate.",
+"faq.3q": "What are your hours?",
+"faq.3a": "Monday to Saturday, 7am to 5pm. Deliveries run 8am to 5pm. We’re closed on Sundays.",
+"faq.4q": "How do I get a price?",
+"faq.4a": "Contractor pricing depends on the job, so we quote directly. Call, text or send the form and we’ll get back to you.",
+"faq.5q": "How can I pay?",
+"faq.5a": "We accept Zelle, card and financing. We’ll confirm the options when we quote your job.",
+"faq.6q": "What else do you carry?",
+"faq.6a": "Cabinets, trim and baseboards, shower doors, quartz countertops, vanities and closet built-ins. Ask if you need something not listed.",
+"book.h1": "Still not sure?",
+"book.h2": "Ask Victor.",
+"book.p": "He’ll tell you what he’d put down on your job, not just what’s popular. Leave your details and a person from our team will call you at a time that works.",
+"book.ig": "IG DM",
+"call.btn": "Call",
+"text.btn": "Text",
+"ctx.label": "Asking about:",
+"ctx.clear": "Clear",
+"f.first": "First name",
+"f.last": "Last name",
+"f.phone": "Phone",
+"f.project": "Project type",
+"f.choose": "Choose one",
+"f.p1": "LVP",
+"f.p2": "Laminate",
+"f.p3": "Hardwood",
+"f.p4": "Tile",
+"f.p5": "Cabinets, trim or shower doors",
+"f.p6": "Quartz or vanities",
+"f.p7": "Something else",
+"f.time": "Best time to call",
+"f.t1": "Morning",
+"f.t2": "Midday",
+"f.t3": "Afternoon",
+"f.t4": "Any time",
+"f.submit": "Request a call",
+"f.fine": "We’ll only use your number to call or text you about this request.",
+"err.first": "Enter your first name.",
+"err.last": "Enter your last name.",
+"err.phone": "Enter a 10-digit phone number.",
+"err.project": "Choose a project type.",
+"form.sending": "Sending…",
+"form.fail": "That didn’t send. Call or text (619) 678-6938 and we’ll take it from there.",
+"done.h": "Got it, thank you.",
+"done.p": "A person from our team will call you soon. Need it sooner? Call or text (619) 678-6938.",
+"ftr.floors": "Floors",
+"ftr.know": "Get to know us",
+"ftr.contact": "Contact",
+"ftr.text": "Text us",
+"ftr.h1": "Monday to Saturday, 7am to 5pm",
+"ftr.h2": "Deliveries 8am to 5pm",
+"ftr.h3": "Closed Sundays",
+"ftr.save.p": "So our calls never show up as spam.",
+"ftr.copy": "© 2026 Jovic Flooring Supply. All rights reserved.",
+"ftr.area": "Serving San Diego, delivering up to Oceanside.",
+"bar.aria": "Quick contact",
+"bar.call": "Call",
+"bar.text": "Text",
+"bar.book": "Book a call",
+"promo.A.h": "30¢ off every sq ft",
+"promo.A.p": "Plus free delivery on orders over 1,500 sq ft. Our Black Friday special runs through November 27.",
+"promo.B.h": "Free delivery on your first two orders",
+"promo.B.p": "Place your first two orders by Black Friday, November 27, and we’ll cover the delivery.",
+"promo.fine": "Sale ends November 27. Call or text (619) 678-6938 to lock it in.",
+"promo.cta": "Claim this offer",
+"promo.no": "Not now",
+"promo.close": "Close",
+"mm.quick": "Quick links",
+"mm.more": "More ways to shop",
+"band.l1": "Mon to Sat",
+"band.l2": "Delivered to your site",
+"band.r1": "Border to Oceanside",
+"band.r2": "Delivery area",
+"mq.1": "In stock, delivered to your job site.",
+"mq.2": "Supply only. We never compete for your install.",
+"mq.3": "A real person answers, never a bot.",
+"mq.4": "Full-box samples on your site.",
+"mq.5": "Family-owned in San Diego.",
+"victor.tag": "Ask Victor",
+"victor.featured": "Meet the owner",
+"victor.h2": "“Hey guys, I’m Victor.”",
+"victor.p": "“Owner of Jovic Flooring Supply here in San Diego. We supply contractors, flippers, and investors with flooring and everything for the remodel. In stock, one call, and deliver straight to the job site.”",
+"arr.prev": "Previous",
+"arr.next": "Next",
+"lvp.s": "Waterproof and quick to install. Rentals, kitchens and baths.",
+"lam.s": "The look of wood with a hard-wearing surface.",
+"hw.s": "Real wood for clients who want the look and the longevity.",
+"tile.s": "Porcelain and ceramic for floors, showers and walls.",
+"c.light.s": "Bright, airy rooms that feel bigger.",
+"c.natural.s": "The safe pick for resale and rentals.",
+"c.brown.s": "Classic warmth that hides daily wear.",
+"c.dark.s": "Rich and dramatic for statement rooms.",
+"c.gray.s": "Cool and modern with light or dark walls.",
+"c.white.s": "Clean tile looks for kitchens and baths.",
+"pick.tab": "In stock now",
+"pick1.ql": "Quick look: Light oak look",
+"pick2.ql": "Quick look: Warm natural",
+"pick3.ql": "Quick look: Marble look",
+"step.1": "Step 01",
+"step.2": "Step 02",
+"step.3": "Step 03",
+"about.tag": "Family-owned",
+"chat.b1": "Hi! Tell me what you’re working on and I’ll call you back with stock and a quote.",
+"help": "Need help?",
+"promo.tag": "Black Friday",
+"victor.watch": "Watch his intro",
+"site.t1": "Meet Victor",
+"site.t2": "Contractor FAQ",
+"site.t3": "Black Friday",
+"vid.intro": "Who is Victor?",
+"vid.faq": "The number one mistake when ordering flooring",
+"vid.short": "How do I avoid running short mid-job?",
+"faq.v1q": "How do I avoid running short halfway through a job?",
+"faq.v1a": "Order everything at once, plus your waste. Same lot, same color, all delivered together. Different lots mean mismatched floors, and to a homeowner that always shows.",
+"faq.v2q": "What’s the number one mistake when ordering flooring?",
+"faq.v2a": "Ordering short just to save a few bucks. The next batch can be a different lot that doesn’t match. Order once, order right, and add your 10%.",
+"faq.watch": "Watch Victor answer this",
+"about.cap": "Victor, owner",
+"about.alt": "Victor, owner of Jovic Flooring Supply, on the phone with a customer",
+"promo.watch": "Watch Victor’s Black Friday video"
+},
+"es": {
+"meta.title": "Jovic Flooring Supply | Pisos para contratistas de San Diego",
+"meta.desc": "Proveedor familiar de pisos en San Diego. LVP, laminado, madera dura y azulejo para contratistas, constructores y administradores de propiedades, entregado en tu obra de lunes a sábado.",
+"skip": "Saltar al contenido",
+"ann.full": "En existencia y entregado en tu obra. De San Diego a Oceanside, de lunes a sábado.",
+"ann.short": "En existencia y entregado en tu obra.",
+"menu.open": "Abrir menú",
+"menu.close": "Cerrar menú",
+"menu.label": "Menú",
+"nav.aria": "Principal",
+"nav.floors": "Ver pisos",
+"nav.resources": "Recursos",
+"nav.delivery": "Área de entrega",
+"nav.about": "Nosotros",
+"nav.how": "Cómo funciona",
+"nav.faq": "Preguntas",
+"lang.aria": "Idioma",
+"hdr.callaria": "Llamar al (619) 678-6938",
+"hdr.book": "Agenda una llamada",
+"mm.material": "Por material",
+"mm.color": "Por color",
+"mm.project": "Por proyecto",
+"mm.picks": "Los tres del mes",
+"res.learn": "Aprende",
+"res.order": "Pedidos",
+"res.contact": "Contacto",
+"res.hours": "Entregas y horario",
+"res.quote": "Pide una cotización",
+"c.light": "Claro y rubio",
+"c.natural": "Roble natural",
+"c.brown": "Café cálido",
+"c.dark": "Nogal oscuro",
+"c.gray": "Gris deslavado",
+"c.white": "Blanco y crema",
+"p.rent": "Rentas y cambios de inquilino",
+"p.kb": "Cocinas y baños",
+"p.whole": "Remodelación de casa completa",
+"p.new": "Obra nueva",
+"p.rent.p": "Pisos duraderos y resistentes al agua para volver a rentar las unidades rápido.",
+"p.kb.p": "LVP resistente al agua y azulejo para las áreas que se mojan todos los días.",
+"p.whole.p": "Un mismo estilo de la entrada a las recámaras, cotizado como un solo trabajo.",
+"p.new.p": "Pisos para obra nueva, cotizados por proyecto y entregados según tu calendario.",
+"hero.h1": "Tu equipo está listo. Tus pisos también deberían estarlo.",
+"hero.sub": "En existencia. Una llamada. Directo a tu obra.",
+"hero.cta1": "Agenda una llamada",
+"hero.cta2": "Ver los pisos",
+"hero.pause": "Pausar el movimiento de fondo",
+"hero.play": "Reanudar el movimiento de fondo",
+"proof.aria": "Puntos clave",
+"victor.text": "Escríbele a Victor",
+"victor.play": "Reproducir el video de Victor",
+"site.eyebrow": "Respuestas claras de Victor",
+"site.h": "Mira antes de ordenar",
+"site.1": "¿Quién es Victor?",
+"site.2": "El error número uno al ordenar pisos",
+"site.3": "¿Cómo evito quedarme corto a mitad de la obra?",
+"site.more": "Videos nuevos cada semana:",
+"shop.eyebrow": "Elegidos para verse bien y aguantar",
+"shop.h": "Busca por",
+"tab.aria": "Buscar por",
+"tab.material": "Material",
+"tab.color": "Color",
+"tab.project": "Proyecto",
+"lvp.h": "Vinilo de lujo (LVP)",
+"lam.h": "Laminado",
+"hw.h": "Madera dura",
+"tile.h": "Azulejo y loseta",
+"ask.lvp": "Pregunta por LVP",
+"ask.lam": "Pregunta por laminado",
+"ask.hw": "Pregunta por madera dura",
+"ask.tile": "Pregunta por azulejo",
+"ask.this": "Pregunta por esto",
+"sw.ask": "Pregunta qué hay",
+"also.h": "También tenemos",
+"also.1": "Gabinetes",
+"also.2": "Molduras y zoclos",
+"also.3": "Puertas de ducha",
+"also.4": "Cubiertas de cuarzo",
+"also.5": "Muebles de baño",
+"also.6": "Clósets a la medida",
+"pick.eyebrow": "Tres pisos, no treinta.",
+"pick.h": "Los tres del mes",
+"pick.quick": "Vista rápida",
+"pick1.name": "Tono roble claro",
+"pick1.d": "Resistente al agua y rápido de instalar. Hecho para rentas, cocinas y baños.",
+"pick1.best": "Rentas, cocinas, baños",
+"pick1.full": "LVP tono roble claro",
+"pick2.name": "Natural cálido",
+"pick2.d": "El aspecto de la madera con una superficie resistente para salas y recámaras.",
+"pick2.best": "Salas, recámaras, pasillos",
+"pick2.full": "Laminado natural cálido",
+"pick3.cat": "Porcelanato",
+"pick3.name": "Tipo mármol",
+"pick3.d": "Un acabado limpio tipo mármol para pisos, regaderas y paredes.",
+"pick3.best": "Pisos, regaderas, paredes",
+"pick3.full": "Porcelanato tipo mármol",
+"ql.best": "Ideal para",
+"ql.price": "Precio",
+"ql.price.v": "Cotizado para tu trabajo",
+"ql.del": "Entrega",
+"ql.del.v": "En tu obra, hasta Oceanside",
+"ql.ask": "Pregunta por este piso",
+"how.eyebrow": "Fácil desde la primera llamada",
+"how.h": "Cómo funciona",
+"s1.h": "Cuéntanos el trabajo",
+"s1.p": "Llama, escribe o agenda una hora. Dinos el producto, los pies cuadrados y a dónde va.",
+"s1.n": "Una foto de los planos o una lista rápida es suficiente.",
+"s2.h": "Recibe tu cotización",
+"s2.p": "Cotizamos el trabajo para tu cuenta y confirmamos qué hay en existencia.",
+"s2.n": "Precio de contratista, cotizado directamente.",
+"s3.h": "Programa la entrega",
+"s3.p": "Elige un día, de lunes a sábado entre 8am y 5pm, y lo llevamos a tu obra.",
+"s3.n": "De San Diego hasta Oceanside.",
+"about.eyebrow": "Nuestra historia",
+"about.h": "Negocio familiar en San Diego",
+"about.p1": "Jovic Flooring Supply abrió en 2026 para dar a los contratistas, constructores y administradores de propiedades de San Diego un proveedor de pisos en el que pueden confiar: respuestas claras, cotizaciones justas y entregas que llegan.",
+"about.p2": "Lo mantenemos simple. Nosotros ponemos el material, tú traes a tu equipo y el trabajo sigue en tiempo.",
+"save.h": "Guarda nuestro número",
+"save.p": "A veces los números de negocios nuevos se marcan como spam. Guarda a Jovic en tus contactos para no perder nuestra llamada.",
+"save.btn": "Guardar contacto",
+"area.eyebrow": "Área de entrega",
+"area.h": "Entregas en todo San Diego",
+"area.p": "De la frontera a Oceanside llevamos los pisos a tu obra. ¿Trabajas más al norte, hasta Temecula? Pídenos un estimado.",
+"hrs.1k": "Lunes a sábado",
+"hrs.1v": "7am a 5pm",
+"hrs.2k": "Entregas, lunes a sábado",
+"hrs.2v": "8am a 5pm",
+"hrs.3k": "Domingo",
+"hrs.3v": "Cerrado",
+"hrs.note": "¿Dudas sobre el horario? Llama o escribe y confirmamos tu ventana de entrega.",
+"map.aria": "Mapa esquemático del área de entrega, desde la frontera con México hasta Oceanside, con estimados disponibles hasta Temecula.",
+"map.ocean": "Océano Pacífico",
+"map.mexico": "México",
+"map.l1": "Entregamos aquí",
+"map.l2": "Estimados a pedido",
+"map.schem": "Mapa esquemático, sin escala",
+"faq.eyebrow": "Bueno saber",
+"faq.h": "Preguntas frecuentes",
+"faq.p": "¿No ves la tuya? Escríbenos y te contesta una persona.",
+"faq.1q": "¿Instalan pisos?",
+"faq.1a": "No. Jovic solo suministra material. Nosotros ponemos el material y tu equipo hace la instalación.",
+"faq.2q": "¿A dónde entregan?",
+"faq.2a": "Entregamos en todo San Diego y hacia el norte hasta Oceanside. ¿Trabajas más lejos, hasta Temecula? Pídenos un estimado.",
+"faq.3q": "¿Cuál es su horario?",
+"faq.3a": "De lunes a sábado, de 7am a 5pm. Las entregas son de 8am a 5pm. Los domingos estamos cerrados.",
+"faq.4q": "¿Cómo obtengo un precio?",
+"faq.4a": "El precio para contratistas depende del trabajo, por eso cotizamos directamente. Llama, escribe o envía el formulario y te respondemos.",
+"faq.5q": "¿Cómo puedo pagar?",
+"faq.5a": "Aceptamos Zelle, tarjeta y financiamiento. Te confirmamos las opciones al cotizar tu trabajo.",
+"faq.6q": "¿Qué más manejan?",
+"faq.6a": "Gabinetes, molduras y zoclos, puertas de ducha, cubiertas de cuarzo, muebles de baño y clósets a la medida. Pregunta si necesitas algo que no esté en la lista.",
+"book.h1": "¿Todavía con dudas?",
+"book.h2": "Pregúntale a Victor.",
+"book.p": "Te dice qué pondría en tu obra, no solo lo que está de moda. Déjanos tus datos y una persona de nuestro equipo te llamará a la hora que te convenga.",
+"book.ig": "Mensaje por IG",
+"call.btn": "Llamar",
+"text.btn": "Mensaje",
+"ctx.label": "Preguntando por:",
+"ctx.clear": "Quitar",
+"f.first": "Nombre",
+"f.last": "Apellido",
+"f.phone": "Teléfono",
+"f.project": "Tipo de proyecto",
+"f.choose": "Elige uno",
+"f.p1": "LVP (vinilo de lujo)",
+"f.p2": "Laminado",
+"f.p3": "Madera dura",
+"f.p4": "Azulejo y loseta",
+"f.p5": "Gabinetes, molduras o puertas de ducha",
+"f.p6": "Cuarzo o muebles de baño",
+"f.p7": "Otra cosa",
+"f.time": "Mejor hora para llamar",
+"f.t1": "Mañana",
+"f.t2": "Mediodía",
+"f.t3": "Tarde",
+"f.t4": "Cualquier hora",
+"f.submit": "Solicita una llamada",
+"f.fine": "Solo usaremos tu número para llamarte o escribirte sobre esta solicitud.",
+"err.first": "Escribe tu nombre.",
+"err.last": "Escribe tu apellido.",
+"err.phone": "Escribe un teléfono de 10 dígitos.",
+"err.project": "Elige un tipo de proyecto.",
+"form.sending": "Enviando…",
+"form.fail": "No se envió. Llama o escribe al (619) 678-6938 y lo resolvemos.",
+"done.h": "Listo, gracias.",
+"done.p": "Una persona de nuestro equipo te llamará pronto. ¿Lo necesitas antes? Llama o escribe al (619) 678-6938.",
+"ftr.floors": "Pisos",
+"ftr.know": "Conócenos",
+"ftr.contact": "Contacto",
+"ftr.text": "Escríbenos",
+"ftr.h1": "Lunes a sábado, 7am a 5pm",
+"ftr.h2": "Entregas de 8am a 5pm",
+"ftr.h3": "Cerrado los domingos",
+"ftr.save.p": "Para que nuestras llamadas nunca salgan como spam.",
+"ftr.copy": "© 2026 Jovic Flooring Supply. Todos los derechos reservados.",
+"ftr.area": "Servimos San Diego y entregamos hasta Oceanside.",
+"bar.aria": "Contacto rápido",
+"bar.call": "Llamar",
+"bar.text": "Mensaje",
+"bar.book": "Agendar",
+"promo.A.h": "30¢ menos por pie cuadrado",
+"promo.A.p": "Además, entrega gratis en pedidos de más de 1,500 pies cuadrados. Nuestro especial de Black Friday dura hasta el 27 de noviembre.",
+"promo.B.h": "Entrega gratis en tus primeros dos pedidos",
+"promo.B.p": "Haz tus primeros dos pedidos antes del Black Friday, 27 de noviembre, y nosotros cubrimos la entrega.",
+"promo.fine": "La oferta termina el 27 de noviembre. Llama o escribe al (619) 678-6938 para apartarla.",
+"promo.cta": "Quiero esta oferta",
+"promo.no": "Ahora no",
+"promo.close": "Cerrar",
+"mm.quick": "Accesos rápidos",
+"mm.more": "Más formas de buscar",
+"band.l1": "Lun a sáb",
+"band.l2": "Entregado en tu obra",
+"band.r1": "De la frontera a Oceanside",
+"band.r2": "Área de entrega",
+"mq.1": "En existencia y entregado en tu obra.",
+"mq.2": "Solo suministro. Nunca competimos por tu instalación.",
+"mq.3": "Te atiende una persona, nunca un robot.",
+"mq.4": "Muestras de caja completa en tu obra.",
+"mq.5": "Negocio familiar en San Diego.",
+"victor.tag": "Pregúntale a Victor",
+"victor.featured": "Conoce al dueño",
+"victor.h2": "“Hola, soy Victor.”",
+"victor.p": "“Dueño de Jovic Flooring Supply aquí en San Diego. Surtimos a contratistas, flippers e inversionistas con pisos y todo lo de la remodelación. En existencia, una llamada y lo entregamos directo en la obra.”",
+"arr.prev": "Anterior",
+"arr.next": "Siguiente",
+"lvp.s": "Resistente al agua y rápido de instalar. Rentas, cocinas y baños.",
+"lam.s": "El aspecto de la madera con una superficie resistente.",
+"hw.s": "Madera real para clientes que buscan belleza y durabilidad.",
+"tile.s": "Porcelanato y cerámica para pisos, regaderas y paredes.",
+"c.light.s": "Espacios claros que se sienten más amplios.",
+"c.natural.s": "La opción segura para vender o rentar.",
+"c.brown.s": "Calidez clásica que disimula el desgaste.",
+"c.dark.s": "Elegante y llamativo para espacios especiales.",
+"c.gray.s": "Moderno y fresco con paredes claras u oscuras.",
+"c.white.s": "Acabados limpios de azulejo para cocinas y baños.",
+"pick.tab": "En existencia",
+"pick1.ql": "Vista rápida: Tono roble claro",
+"pick2.ql": "Vista rápida: Natural cálido",
+"pick3.ql": "Vista rápida: Tipo mármol",
+"step.1": "Paso 01",
+"step.2": "Paso 02",
+"step.3": "Paso 03",
+"about.tag": "Negocio familiar",
+"chat.b1": "¡Hola! Cuéntame en qué estás trabajando y te llamo con existencia y cotización.",
+"help": "¿Necesitas ayuda?",
+"promo.tag": "Black Friday",
+"victor.watch": "Ver su presentación",
+"site.t1": "Conoce a Victor",
+"site.t2": "Preguntas de contratistas",
+"site.t3": "Black Friday",
+"vid.intro": "¿Quién es Victor?",
+"vid.faq": "El error número uno al ordenar pisos",
+"vid.short": "¿Cómo evito quedarme corto a mitad de la obra?",
+"faq.v1q": "¿Cómo evito quedarme corto a mitad de la obra?",
+"faq.v1a": "Ordena todo de una vez, más tu desperdicio. Mismo lote, mismo color, todo entregado junto. Lotes diferentes significan pisos que no combinan, y eso el dueño de la casa siempre lo nota.",
+"faq.v2q": "¿Cuál es el error número uno al ordenar pisos?",
+"faq.v2a": "Ordenar de menos para ahorrar unos dólares. El siguiente pedido puede venir de otro lote que no combina. Ordena una vez, ordena bien y agrega tu 10%.",
+"faq.watch": "Ver la respuesta de Victor (en inglés)",
+"about.cap": "Victor, dueño",
+"about.alt": "Victor, dueño de Jovic Flooring Supply, hablando por teléfono con un cliente",
+"promo.watch": "Ver el video de Black Friday de Victor (en inglés)"
+}
+};
+</script>
+<script>
+/* Jovic Flooring Supply: page behavior. No dependencies.
+   Storage access is always wrapped in try/catch so the page works with storage blocked. */
+(function () {
+  "use strict";
+
+  var J = window.JOVIC || {};
+  var D = window.JOVIC_I18N || { en: {}, es: {} };
+  var root = document.documentElement;
+  var lang = "en";
+  var reduceMotion = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  var finePointer = !!(window.matchMedia && window.matchMedia("(hover: hover) and (pointer: fine)").matches);
+
+  function $(sel, ctx) { return (ctx || document).querySelector(sel); }
+  function $$(sel, ctx) { return Array.prototype.slice.call((ctx || document).querySelectorAll(sel)); }
+  function lsGet(k) { try { return window.localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { window.localStorage.setItem(k, v); } catch (e) { /* ignore */ } }
+  function ssGet(k) { try { return window.sessionStorage.getItem(k); } catch (e) { return null; } }
+  function ssSet(k, v) { try { window.sessionStorage.setItem(k, v); } catch (e) { /* ignore */ } }
+  function t(key) { return (D[lang] && D[lang][key]) || (D.en && D.en[key]) || key; }
+  function qs(name) { return new RegExp("[?&]" + name + "(=|&|$)").test(window.location.search); }
+  function scrollToEl(el) { if (el) el.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" }); }
+
+  /* ------------------------------------------------------------ header shadow */
+  var hdr = $(".hdr");
+  function onScroll() { hdr.classList.toggle("is-solid", (window.pageYOffset || root.scrollTop) > 40); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  /* ------------------------------------------------------------ mega menu */
+  var menuBtns = $$(".nav__btn");
+  var closeTimer = null;
+  function panelOf(btn) { return document.getElementById(btn.getAttribute("aria-controls")); }
+  function closeMenus(except) {
+    menuBtns.forEach(function (b) {
+      if (b === except) return;
+      b.setAttribute("aria-expanded", "false");
+      var p = panelOf(b); if (p) p.classList.remove("is-open");
+    });
+  }
+  var openedAt = 0;
+  function openMenu(btn) {
+    closeMenus(btn);
+    if (btn.getAttribute("aria-expanded") !== "true") openedAt = Date.now();
+    btn.setAttribute("aria-expanded", "true");
+    var p = panelOf(btn); if (p) p.classList.add("is-open");
+  }
+  menuBtns.forEach(function (btn) {
+    var panel = panelOf(btn);
+    btn.addEventListener("click", function () {
+      // a hover may have just opened it: keep it open instead of toggling it shut
+      if (btn.getAttribute("aria-expanded") === "true" && Date.now() - openedAt > 450) closeMenus(); else openMenu(btn);
+    });
+    if (finePointer) {
+      var li = btn.parentNode;
+      [li, panel].forEach(function (el) {
+        if (!el) return;
+        el.addEventListener("mouseenter", function () { window.clearTimeout(closeTimer); openMenu(btn); });
+        el.addEventListener("mouseleave", function () { closeTimer = window.setTimeout(function () { closeMenus(); }, 160); });
+      });
+    }
+  });
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest(".nav") && !e.target.closest(".mm")) closeMenus();
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    var open = menuBtns.filter(function (b) { return b.getAttribute("aria-expanded") === "true"; })[0];
+    if (open) { closeMenus(); open.focus(); }
+  });
+  $$(".mm [data-close]").forEach(function (a) { a.addEventListener("click", function () { closeMenus(); }); });
+
+  /* ------------------------------------------------------------ phone drawer */
+  var drawer = $("#drawer");
+  var burger = $(".burger");
+  function setDrawer(open) {
+    drawer.classList.toggle("is-open", open);
+    drawer.setAttribute("aria-hidden", String(!open));
+    burger.setAttribute("aria-expanded", String(open));
+    root.classList.toggle("no-scroll", open);
+    if (open) { var x = $(".drawer__x", drawer); if (x) x.focus(); } else { burger.focus({ preventScroll: true }); }
+  }
+  if (drawer && burger) {
+    burger.addEventListener("click", function () { setDrawer(true); });
+    $$("[data-drawer-close]", drawer).forEach(function (el) { el.addEventListener("click", function () { if (drawer.classList.contains("is-open")) setDrawer(false); }); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && drawer.classList.contains("is-open")) setDrawer(false); });
+  }
+
+  /* ------------------------------------------------------------ language */
+  var langButtons = $$(".lang button");
+  function applyLang(next, persist) {
+    lang = next === "es" ? "es" : "en";
+    root.lang = lang;
+    $$("[data-i18n]").forEach(function (el) { el.textContent = t(el.getAttribute("data-i18n")); });
+    $$("[data-i18n-attr]").forEach(function (el) {
+      el.getAttribute("data-i18n-attr").split(";").forEach(function (pair) {
+        var i = pair.indexOf(":");
+        if (i > 0) el.setAttribute(pair.slice(0, i), t(pair.slice(i + 1)));
+      });
+    });
+    document.title = t("meta.title");
+    var md = $('meta[name="description"]'); if (md) md.setAttribute("content", t("meta.desc"));
+    var og = $('meta[property="og:title"]'); if (og) og.setAttribute("content", t("meta.title"));
+    langButtons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+    updatePauseLabel();
+    renderPromo();
+    renderVid();
+    renderCtx();
+    if (qlOpenId) fillQuick(qlOpenId);
+    if (persist) lsSet("jovic.lang", lang);
+  }
+  langButtons.forEach(function (b) { b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang"), true); }); });
+
+  /* ------------------------------------------------------------ hero motion (collage drift + video tile) */
+  var hero = $(".hero");
+  var vids = $$(".collage video");
+  var pauseBtn = $(".hero__pause");
+  function updatePauseLabel() {
+    if (!pauseBtn) return;
+    var paused = pauseBtn.getAttribute("aria-pressed") === "true";
+    pauseBtn.setAttribute("aria-label", t(paused ? "hero.play" : "hero.pause"));
+  }
+  function setPaused(p) {
+    pauseBtn.setAttribute("aria-pressed", String(p));
+    hero.classList.toggle("is-paused", p);
+    vids.forEach(function (vid) { if (p) vid.pause(); else { var pr = vid.play(); if (pr && pr.catch) pr.catch(function () {}); } });
+    updatePauseLabel();
+  }
+  if (pauseBtn && hero) {
+    if (reduceMotion) { vids.forEach(function (vid) { vid.removeAttribute("autoplay"); vid.pause(); }); setPaused(true); }
+    pauseBtn.addEventListener("click", function () { setPaused(pauseBtn.getAttribute("aria-pressed") !== "true"); });
+  }
+
+  /* ------------------------------------------------------------ Victor's videos (lightbox, plays with sound) */
+  var VIDEOS = J.videos || {
+    intro: { src: "assets/video/victor-intro.mp4", poster: "assets/video/v-intro-916.jpg", title: "vid.intro" },
+    faq: { src: "assets/video/faq-order-right.mp4", poster: "assets/video/v-faq-916.jpg", title: "vid.faq" },
+    short: { src: "assets/video/running-short.mp4", poster: "assets/video/v-short-916.jpg", title: "vid.short" }
+  };
+  var vm = $("#vid"), vv = $("#vid-v"), vKey = null, vLast = null;
+  function renderVid() { if (vKey && VIDEOS[vKey]) $("#vid-h").textContent = t(VIDEOS[vKey].title); }
+  function openVid(key) {
+    var d = VIDEOS[key]; if (!vm || !d) return;
+    vLast = document.activeElement; vKey = key;
+    vv.poster = d.poster; vv.src = d.src; renderVid();
+    vm.classList.add("is-open"); vm.setAttribute("aria-hidden", "false"); root.classList.add("no-scroll");
+    var pr = vv.play(); if (pr && pr.catch) pr.catch(function () {});
+    var x = $("[data-vid-close]", vm); if (x) x.focus();
+  }
+  function closeVid() {
+    if (!vm || !vm.classList.contains("is-open")) return;
+    vv.pause(); vv.removeAttribute("src"); vv.load();
+    vm.classList.remove("is-open"); vm.setAttribute("aria-hidden", "true"); root.classList.remove("no-scroll");
+    vKey = null;
+    if (vLast && vLast.focus) { try { vLast.focus({ preventScroll: true }); } catch (e) {} }
+  }
+  if (vm) {
+    $$("[data-vid-close]", vm).forEach(function (b) { b.addEventListener("click", closeVid); });
+    vm.addEventListener("click", function (e) { if (e.target === vm) closeVid(); });
+    vm.addEventListener("keydown", function (e) { if (e.key === "Escape") { e.preventDefault(); closeVid(); } else trapTab(e, vm); });
+  }
+
+  /* ------------------------------------------------------------ shop-by tabs */
+  var tabs = $$('.tabs [role="tab"]');
+  function selectTab(name, focus) {
+    tabs.forEach(function (tb) {
+      var on = tb.id === "tab-" + name;
+      tb.setAttribute("aria-selected", String(on));
+      tb.tabIndex = on ? 0 : -1;
+      var pn = document.getElementById(tb.getAttribute("aria-controls"));
+      if (pn) pn.hidden = !on;
+      if (on && focus) tb.focus();
+    });
+    window.setTimeout(function () { if (typeof updateArrows === "function") updateArrows(); }, 30);
+  }
+  tabs.forEach(function (tb, i) {
+    tb.addEventListener("click", function () { selectTab(tb.id.replace("tab-", ""), false); });
+    tb.addEventListener("keydown", function (e) {
+      var n = null;
+      if (e.key === "ArrowRight") n = tabs[(i + 1) % tabs.length];
+      else if (e.key === "ArrowLeft") n = tabs[(i - 1 + tabs.length) % tabs.length];
+      else if (e.key === "Home") n = tabs[0];
+      else if (e.key === "End") n = tabs[tabs.length - 1];
+      if (n) { e.preventDefault(); selectTab(n.id.replace("tab-", ""), true); }
+    });
+  });
+  /* arrows scroll whichever rail is showing */
+  var arrows = $$(".arrow");
+  function curRail() { var pn = $$(".panel").filter(function (p) { return !p.hidden; })[0]; return pn ? $(".rail", pn) : null; }
+  function updateArrows() {
+    var r = curRail(); if (!r) return;
+    var max = r.scrollWidth - r.clientWidth - 2;
+    arrows.forEach(function (b) {
+      var dir = +b.getAttribute("data-scroll");
+      b.disabled = dir < 0 ? r.scrollLeft <= 2 : r.scrollLeft >= max;
+    });
+  }
+  arrows.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var r = curRail(); if (!r) return;
+      var tile = $(".tile", r); var step = tile ? tile.getBoundingClientRect().width + 14 : r.clientWidth * 0.8;
+      r.scrollBy({ left: +b.getAttribute("data-scroll") * step, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  });
+  $$(".rail").forEach(function (r) { r.addEventListener("scroll", updateArrows, { passive: true }); });
+  window.addEventListener("resize", updateArrows);
+  tabs.forEach(function (tb) { tb.addEventListener("click", function () { window.setTimeout(updateArrows, 30); }); });
+  updateArrows();
+
+  $$("a[data-tab]").forEach(function (a) {
+    a.addEventListener("click", function () { selectTab(a.getAttribute("data-tab"), false); });
+  });
+
+  /* ------------------------------------------------------------ jump to the form with context */
+  var projectSel = $("#f-project");
+  var firstInput = $("#f-first");
+  var interestInput = $("#f-interest");
+  var ctxBox = $("#f-ctx");
+  var interestKey = "";
+  function renderCtx() {
+    if (!ctxBox) return;
+    ctxBox.hidden = !interestKey;
+    if (interestKey) $("#f-ctx-v").textContent = t(interestKey);
+    if (interestInput) interestInput.value = interestKey ? (D.en[interestKey] || interestKey) : "";
+  }
+  function goToForm(project, interest) {
+    if (project && projectSel) projectSel.value = project;
+    if (interest !== undefined) { interestKey = interest || ""; renderCtx(); }
+    scrollToEl($("#book"));
+    window.setTimeout(function () { if (firstInput) firstInput.focus({ preventScroll: true }); }, reduceMotion ? 0 : 650);
+  }
+  if (ctxBox) $("#f-ctx-x").addEventListener("click", function () { interestKey = ""; renderCtx(); });
+  $$("[data-ask]").forEach(function (b) {
+    b.addEventListener("click", function () { goToForm(b.getAttribute("data-project"), b.getAttribute("data-interest") || ""); });
+  });
+
+  /* ------------------------------------------------------------ modal helpers */
+  function focusables(box) {
+    return $$('a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])', box)
+      .filter(function (el) { return el.offsetParent !== null; });
+  }
+  function trapTab(e, box) {
+    if (e.key !== "Tab") return;
+    var f = focusables(box); if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+
+  /* ------------------------------------------------------------ quick look */
+  var ql = $("#ql");
+  var qlOpenId = null, qlLast = null;
+  var PICKS = {
+    "1": { img: "assets/img/floor-lvp.jpg", cat: "lvp.h", name: "pick1.name", d: "pick1.d", best: "pick1.best", project: "lvp", full: "pick1.full" },
+    "2": { img: "assets/img/floor-laminate.jpg", cat: "lam.h", name: "pick2.name", d: "pick2.d", best: "pick2.best", project: "laminate", full: "pick2.full" },
+    "3": { img: "assets/img/floor-tile.jpg", cat: "pick3.cat", name: "pick3.name", d: "pick3.d", best: "pick3.best", project: "tile", full: "pick3.full" }
+  };
+  function fillQuick(id) {
+    var p = PICKS[id]; if (!p) return;
+    $("#ql-img").src = p.img;
+    $("#ql-cat").textContent = t(p.cat);
+    $("#ql-h").textContent = t(p.name);
+    $("#ql-d").textContent = t(p.d);
+    $("#ql-best").textContent = t(p.best);
+  }
+  function openQuick(id) {
+    qlLast = document.activeElement; qlOpenId = id; fillQuick(id);
+    ql.classList.add("is-open"); ql.setAttribute("aria-hidden", "false"); root.classList.add("no-scroll");
+    $("#ql-ask").focus();
+  }
+  function closeQuick(restore) {
+    if (!ql.classList.contains("is-open")) return;
+    ql.classList.remove("is-open"); ql.setAttribute("aria-hidden", "true"); root.classList.remove("no-scroll");
+    qlOpenId = null;
+    if (restore !== false && qlLast && qlLast.focus) { try { qlLast.focus({ preventScroll: true }); } catch (e) {} }
+  }
+  if (ql) {
+    $$("[data-quick]").forEach(function (b) { b.addEventListener("click", function () { openQuick(b.getAttribute("data-quick")); }); });
+    $$("[data-ql-close]", ql).forEach(function (b) { b.addEventListener("click", function () { closeQuick(); }); });
+    ql.addEventListener("click", function (e) { if (e.target === ql) closeQuick(); });
+    ql.addEventListener("keydown", function (e) { if (e.key === "Escape") { e.preventDefault(); closeQuick(); } else trapTab(e, ql); });
+    $("#ql-ask").addEventListener("click", function () {
+      var p = PICKS[qlOpenId]; closeQuick(false);
+      if (p) goToForm(p.project, p.full);
+    });
+  }
+
+  /* ------------------------------------------------------------ lead form */
+  var form = $("#lead");
+  var statusEl = $("#f-status");
+  var submitBtn = $("#f-submit");
+  function digits(s) {
+    var d = String(s || "").replace(/\D+/g, "");
+    if (d.length === 11 && d.charAt(0) === "1") d = d.slice(1);
+    return d;
+  }
+  function fmtPhone(s) {
+    var d = digits(s);
+    if (d.length !== 10) return s;
+    return "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" + d.slice(6);
+  }
+  function setError(inputId, key) {
+    var input = $("#" + inputId);
+    var field = input.closest(".field");
+    var err = $("#" + input.getAttribute("aria-describedby"));
+    if (key) {
+      field.classList.add("is-bad"); input.setAttribute("aria-invalid", "true");
+      err.setAttribute("data-i18n", key); err.textContent = t(key);
+    } else {
+      field.classList.remove("is-bad"); input.removeAttribute("aria-invalid");
+      err.removeAttribute("data-i18n"); err.textContent = "";
+    }
+  }
+  function setStatus(key, bad) {
+    if (!statusEl) return;
+    if (key) { statusEl.setAttribute("data-i18n", key); statusEl.textContent = t(key); }
+    else { statusEl.removeAttribute("data-i18n"); statusEl.textContent = ""; }
+    statusEl.classList.toggle("is-bad", !!bad);
+  }
+  function validate() {
+    var bad = [];
+    if (!$("#f-first").value.trim()) bad.push(["f-first", "err.first"]);
+    if (!$("#f-last").value.trim()) bad.push(["f-last", "err.last"]);
+    if (digits($("#f-phone").value).length !== 10) bad.push(["f-phone", "err.phone"]);
+    if (!$("#f-project").value) bad.push(["f-project", "err.project"]);
+    ["f-first", "f-last", "f-phone", "f-project"].forEach(function (id) { setError(id, null); });
+    bad.forEach(function (b) { setError(b[0], b[1]); });
+    if (bad.length) $("#" + bad[0][0]).focus();
+    return bad.length === 0;
+  }
+  function showDone() { form.classList.add("is-sent"); var done = $("#f-done"); if (done) done.focus(); }
+
+  if (form) {
+    var phoneInput = $("#f-phone");
+    phoneInput.addEventListener("blur", function () { phoneInput.value = fmtPhone(phoneInput.value); });
+    ["f-first", "f-last", "f-phone", "f-project"].forEach(function (id) {
+      var el = $("#" + id);
+      el.addEventListener("input", function () { setError(id, null); });
+      el.addEventListener("change", function () { setError(id, null); });
+    });
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      setStatus(null);
+      if (form.elements.website && form.elements.website.value) { showDone(); return; } // honeypot: bots see a fake success
+      if (!validate()) return;
+      var payload = {
+        first: form.elements.first.value.trim(),
+        last: form.elements.last.value.trim(),
+        phone: fmtPhone(form.elements.phone.value),
+        project: form.elements.project.value,
+        bestTime: form.elements.time.value,
+        interest: form.elements.interest.value || "",
+        offer: form.elements.offer.value || "",
+        language: lang,
+        page: window.location.href.split("#")[0],
+        sentAt: new Date().toISOString()
+      };
+      var to = J.leadEndpoint || (J.leadEmail ? "https://formsubmit.co/ajax/" + J.leadEmail : "");
+      if (!to) {
+        if (J.draft) { // demo mode (private preview): nothing leaves the browser
+          if (window.console && console.info) console.info("[Jovic demo] lead not sent:", payload);
+          submitBtn.disabled = true; setStatus("form.sending");
+          window.setTimeout(function () { setStatus(null); showDone(); }, 500);
+        } else { setStatus("form.fail", true); } // live site with no destination set: never pretend it worked
+        return;
+      }
+      var body = payload;
+      if (!J.leadEndpoint) { // FormSubmit: readable email for Victor, plus the text-alert copy
+        var opt = function (sel) { var o = sel.options[sel.selectedIndex]; var k = o && o.getAttribute("data-i18n"); return (k && D.en[k]) || (o ? o.text : ""); };
+        var who = payload.first + " " + payload.last;
+        body = {
+          "Name": who,
+          "Phone": payload.phone,
+          "Project": opt($("#f-project")),
+          "Best time to call": opt($("#f-time")),
+          "Language": lang === "es" ? "Spanish" : "English",
+          "Page": payload.page,
+          "_subject": "New Jovic lead: " + who + ", " + payload.phone,
+          "_template": "table",
+          "_captcha": "false"
+        };
+        if (payload.interest) body["Asking about"] = payload.interest;
+        if (payload.offer) body["Offer"] = J.promoLabel || "Black Friday special";
+        if (J.leadTextEmail) body._cc = J.leadTextEmail;
+      }
+      submitBtn.disabled = true; setStatus("form.sending");
+      fetch(to, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "Accept": "application/json" },
+        body: JSON.stringify(body)
+      }).then(function (r) {
+        if (!r.ok) throw new Error("bad status " + r.status);
+        return r.json().catch(function () { return {}; });
+      }).then(function (res) {
+        if (!J.leadEndpoint && res && String(res.success) !== "true") throw new Error((res && res.message) || "not sent");
+        setStatus(null); showDone();
+      }).catch(function (err) {
+        if (window.console && console.warn) console.warn("[Jovic] lead not sent:", err && err.message);
+        submitBtn.disabled = false; setStatus("form.fail", true);
+      });
+    });
+  }
+
+  /* ------------------------------------------------------------ promo pop-up */
+  var promo = $("#promo");
+  var promoLast = null;
+  function promoVariant() { return J.promo && J.promo.variant === "B" ? "B" : "A"; }
+  function renderPromo() {
+    if (!promo) return;
+    var v = promoVariant();
+    $("#promo-h").textContent = t("promo." + v + ".h");
+    $("#promo-p").textContent = t("promo." + v + ".p");
+  }
+  function promoAllowed() {
+    if (!promo || !J.promo || qs("nopromo")) return false;
+    if (qs("promo")) return true;
+    if (J.promo.endsOn) {
+      var end = new Date(J.promo.endsOn + "T23:59:59-08:00"); // Pacific standard time in late November
+      if (Date.now() > end.getTime()) return false;
+    }
+    return !ssGet("jovic.promo.seen");
+  }
+  function openPromo() {
+    if (!promoAllowed() || promo.classList.contains("is-open")) return;
+    if ((ql && ql.classList.contains("is-open")) || (drawer && drawer.classList.contains("is-open")) || (vm && vm.classList.contains("is-open"))) return;
+    var a = document.activeElement;
+    if (a && /^(INPUT|SELECT|TEXTAREA)$/.test(a.tagName)) return; // never interrupt typing
+    promoLast = a; renderPromo();
+    promo.classList.add("is-open"); promo.setAttribute("aria-hidden", "false"); root.classList.add("no-scroll");
+    var first = $("[data-promo-claim]", promo); if (first) first.focus();
+  }
+  function closePromo() {
+    if (!promo.classList.contains("is-open")) return;
+    promo.classList.remove("is-open"); promo.setAttribute("aria-hidden", "true"); root.classList.remove("no-scroll");
+    ssSet("jovic.promo.seen", "1");
+    if (promoLast && promoLast.focus) { try { promoLast.focus({ preventScroll: true }); } catch (e) {} }
+  }
+  if (promo) {
+    renderPromo();
+    $$("[data-promo-close]", promo).forEach(function (b) { b.addEventListener("click", closePromo); });
+    promo.addEventListener("click", function (e) { if (e.target === promo) closePromo(); });
+    $("[data-promo-claim]", promo).addEventListener("click", function (e) {
+      e.preventDefault();
+      var offer = $("#f-offer"); if (offer) offer.value = "promo-" + promoVariant();
+      promoLast = null; closePromo(); goToForm();
+    });
+    promo.addEventListener("keydown", function (e) { if (e.key === "Escape") { e.preventDefault(); closePromo(); } else trapTab(e, promo); });
+    window.setTimeout(openPromo, ((J.promo && J.promo.delaySeconds) || 9) * 1000);
+  }
+
+  document.addEventListener("click", function (e) {
+    var b = e.target && e.target.closest ? e.target.closest("[data-video]") : null;
+    if (!b) return;
+    e.preventDefault();
+    if (promo && promo.classList.contains("is-open")) { promoLast = null; closePromo(); }
+    openVid(b.getAttribute("data-video"));
+  });
+
+  /* ------------------------------------------------------------ scroll reveal */
+  var rv = $$(".rv");
+  if (reduceMotion || !("IntersectionObserver" in window)) {
+    rv.forEach(function (el) { el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    rv.forEach(function (el) { io.observe(el); });
+    window.setTimeout(function () { rv.forEach(function (el) { el.classList.add("in"); }); }, 4000); // safety net
+  }
+
+  /* ------------------------------------------------------------ draft chip (click to hide) */
+  var chip = $(".draftchip");
+  if (chip) chip.addEventListener("click", function () { chip.hidden = true; });
+
+  /* ------------------------------------------------------------ start */
+  var saved = lsGet("jovic.lang");
+  applyLang(saved === "es" ? "es" : "en", false);
+})();
+</script>
+
+</body>
+</html>
